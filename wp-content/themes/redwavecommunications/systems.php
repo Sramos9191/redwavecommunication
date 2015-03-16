@@ -3,9 +3,10 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-offset-4 col-md-4 col-sm-24 col-xs-24">
+        <div class="col-md-10 col-sm-24 col-xs-24">
             <div class="grid-system">
                 <img class="grid-header" src="http://localhost:8080/wp-content/uploads/2015/02/systems2.png">
+
                 <p class="headpad">
                     We partner with leading
                     technology manufacturers to
