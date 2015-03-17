@@ -9,13 +9,6 @@ General
     padding: 0 15px;
 }
 
-.breadcrumbs {
-    padding: 0 15px;
-    color: #a71f35;
-    font-size: 90px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: lighter;
-}
 
 .bulletlist {
     margin: 0 0 0 20px;
@@ -91,18 +84,18 @@ navbar css
 }
 
 .navbar li a {
-    color: #fff;
+    color: #fafafa;
 }
 
-.navbar li a:hover, .navbar li a:focus, .navbar li a:active {
+.navbar li a:hover, .navbar li a:focus {
     background: #a71f35;
 }
 
 
 
-.navbar ul li:hover:after{
+.navbar ul li:hover:after {
     border-bottom: 5px solid #a71f35;
-    background: #c21a24;
+    background: #a71f35;
     content: "";
     padding: 3px 0 0 0;
     left: 0;
@@ -208,16 +201,28 @@ ABOUT US STYLES
 .about-top {
     background: #a71f35 url("img/about-us.png") no-repeat left;
     background-size: 100% 100%;
-    color: #fff;
     padding: 10px 20px;
     height: 319px;
 }
+.about-top p {
+    font: 1.1em Helvetica, Arial, san-serif;
+    color: #fafafa;
+    padding: 20px 10px;
+    margin: 0 0 0 15px;
+    line-height: 280%
+}
+
 .about-bottom {
     font-size: 16px;
     margin: 0 20px 0 0;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 7px;
     min-height: 350px;
     text-align: left;
+}
+
+.about-bottom a{
+    color: #323232;
+
 }
 
 #cert {
@@ -225,10 +230,13 @@ ABOUT US STYLES
 }
 
 #cert h4 {
+
     margin: 0 0 15px 0;
 }
 
-#about {
+#about p {
+    color: #fafafa;
+    font: 1.2em Helvetica, Arial, san-serif;
     padding: 45px 0;
     margin: 0 0 0 30px;
     line-height: 300%;
@@ -352,14 +360,17 @@ SERVICES STYLES
     margin: 0 10%;
 }
 
+#service-img {
+    margin: 0 0 20px 11%;
+}
+
 .service {
     background-color: #a71f35;
     color: #fff;
     margin: 0 0 10px 0;
     width: 100%;
-    height: 140px;
+    height: 225px;
     position: relative;
-    font: 16px bold Helvetica, Arial, san-serif;
     text-align: left;
 }
 
@@ -377,7 +388,6 @@ SERVICES STYLES
     margin: 0 0 20px 0;
     width: auto;
     min-height: 200px;
-    font: 12px Helvetica, Arial, san-serif;
 }
 
 /*====================================================================
@@ -426,6 +436,31 @@ SYSTEMS STYLES
 .row {
     margin-bottom: 25px;
 }
+
+/* =======================================================================
+SERVICE AND SYSTEMS STYLES SPECS
+=========================================================================*/
+
+.servsysSubheads {
+    font: 1.5em Helvetica, Arial, san-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #c21a24;
+}
+
+.servsysBullets {
+    padding: 0 0 0 17px;
+    margin-bottom: 6px;
+    font-color: #323232;
+    list-style: disc;
+}
+
+.servsysBullets li {
+    color: #5b5b5b;
+    font: 1em bold Helvetica, Arial, san-serif;
+}
+
+
 
 /* ========================================================================
 CONTACT US STYLES

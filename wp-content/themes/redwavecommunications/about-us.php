@@ -28,7 +28,7 @@
 
                 </div>
             </div>
-            </div>
+        </div>
 
             <!--==============about us section========================-->
         <?php endwhile; endif; ?>
