@@ -1,74 +1,75 @@
 <?php /* Template Name: Systmes Template */ get_header(); ?>
 
-
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-10 col-sm-24 col-xs-24">
-            <div class="grid-system">
-                <img class="grid-header" src="http://localhost:8080/wp-content/uploads/2015/02/systems2.png">
-
+        <div class="col-md-offset-1 col-md-7 col-sm-24 col-xs-24">
+            <h1>    
+                <img src="http://localhost:8080/wp-content/uploads/2015/02/systems2.png" alt="business systems">
+            </h1>
+            <div class="row">
+            <a class="pull-right" id="residentialSys" href="#">View Residential Systems</a>
+            </div>
+            <div class="row">
                 <p class="headpad">
                     We partner with leading
                     technology manufacturers to
                     customize the right solution
                     or residential or business
-                    projects.</p>
-            </div><!-- close .grid-system -->
-        </div>
+                    projects.
+                </p>
 
+            </div><!-- close row -->
+        </div><!-- close .pull-left col-md-12 -->
+        <div class="col-md-13 all-systems">
         <?php
-        $args = array(
-            'post_type'        => 'rw-system',
-            'post_status'      => 'publish',
-            'order'            => 'ASC',
-            'orderby'          => 'title',
-            'posts_per_page'   => -1
-        );
-        $loop = new WP_Query($args);
-        $cols = 2;
-        if ($loop->have_posts()): while($loop->have_posts()): $loop->the_post();
+            $args = array(
+                'post_type'        => 'rw-system',
+                'post_status'      => 'publish',
+                'order'            => 'ASC',
+                'orderby'          => 'title',
+            );
+
+            $loop = new WP_Query($args);
+            
+            if ($loop->have_posts()): while($loop->have_posts()): $loop->the_post(); 
         ?>
+        <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false, '' );?>
+        <div class="system">      
+            <div class="image" style="background:url('<?php echo $src[0]; ?>') center no-repeat; background-size: cover;">
 
-        <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 200,150 ), false, '' );?>
-
-        <div class="<?php echo ($cols == 1) ? 'col-md-offset-4' : '' ?> col-md-4 col-sm-24 col-xs-24">
-            <div class="grid-system">
-                <div class="image" style="background:url('<?php echo $src[0]; ?>'); background-size: 196px 156px;"></div>
-
-                <div class="infocontainer infolist">
-                    <img id="tool-tip" src="<?php echo get_template_directory_uri() ?>/img/tool-tip.png" />
-                    <div class="sys-desc col-md-14">
-                        <p><?php echo types_render_field('system-description', array('output'=>'html')); ?></p>
-                    </div><!-- close .col-md-14 -->
-                    <div class="col-md-10">
-                        <h5><strong>BRANDS</strong></h5>
-                        <ul class="bulletlist">
-                            <li>
-                                <?php
-                                echo types_render_field('system-list', array('output' => 'html', 'separator' => '</li><li>'));
-                                ?>
-                            </li>
-                        </ul>
-                    </div> <!-- close .col-md-10 -->
-                </div> <!-- close info container -->
-            </div><!-- close grid-system-->
-        </div><!-- close .col-md-offset-2 -->
-
-        <?php if ($cols === 4): ?>
-
-        <!-- close the current row -->
+                    <div class="infocontainer">
+                        <img id="tool-tip" src="<?php echo get_template_directory_uri() ?>/img/tool-tip.png" />
+                        <div class="col-xs-14 sys-desc">
+                            <p>
+                                <?php echo types_render_field('system-description',
+                                    array('output'=>'html')); ?>
+                            </p>
+                        </div><!-- end of description for infobox -->
+                        <div class="col-xs-10 infolist">
+                            <h5><strong>BRANDS</strong></h5>
+                            <ul class="bulletlist">
+                                <li>
+                                    <?php
+                                        echo types_render_field('system-list',
+                                            array('output' => 'html', 'separator' => '</li><li>'));
+                                    ?>
+                                </li>
+                            </ul>
+                        </div><!-- end of bulletlist in infolist-->
+                    </div><!-- end of the info container -->
+            </div>
+        </div><!-- close info container -->
+        <?php 
+            endwhile; endif;
+        ?>
+        </div>
     </div>
-
-    <!-- open a new row -->
-    <div class="row">
-        <?php $cols=0; endif; ?>
-        <?php $cols++; endwhile; endif; ?>
-        <!-- finally close the current row -->
+    <!-- finally close the current row -->
     </div>
-
+        
     <div class="row">
         <div class="col-md-24">
             <?php get_footer(); ?>
         </div>
-    </div>
+    </div><!-- close row -->
 </div><!-- close the beginning containers  -->

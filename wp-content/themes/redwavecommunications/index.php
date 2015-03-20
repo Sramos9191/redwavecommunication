@@ -20,7 +20,7 @@
 				<div class="col-md-12" id="right">
 					<h4 class="red">BUSINESS<br /> SOLUTIONS</h4>
 
-					<ul class="buspad">
+					<ul>
 						<?php if ($query->have_posts()): while($query->have_posts()): $query->the_post(); ?>
 						<li><?php the_title(); ?> ></li>
 						<? endwhile; endif; ?>

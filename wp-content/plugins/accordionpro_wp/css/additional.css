@@ -20,6 +20,13 @@
 
 }
 
+.content {
+  font: 1.3em Helvetica, Arial, sans-serif;
+  line-height: 120%;
+  margin: 10px 0 0 40px !important;
+  padding: 0 25px 0 0 !important;
+}
+
 #accordionPro175.basic .slide>h2, #accordionPro176.basic .slide>h2 {
   background: #ccc;
   color: #323232;

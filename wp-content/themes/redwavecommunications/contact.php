@@ -7,7 +7,7 @@
         <div class="contact-container">
 
             <!-- Contact us form information -->
-            <div class="col-md-3" id="contact-info">
+            <div class="col-md-4" id="contact-info">
                 <?php
                     $args = array(
                     'post_type'        => 'rw-contact-us',
@@ -23,16 +23,16 @@
                         ?>
 
                 <div class="contactadd">
-                    <b><?php echo types_render_field('rw-location', array('output' => 'HTML')); ?></b><br />
+                    <h3><?php echo types_render_field('rw-location', array('output' => 'HTML')); ?></h3>
                     <?php echo types_render_field('rw-address', array('output' => 'HTML', 'separator' => '<br />')); ?>
-                </div><!-- closing div-->
+                </div><!-- closing div--><br />
 
                     <?php $loopItr++; endwhile; endif; ?>
 
                     <p><a href="mailto:info@redwavecomm.com">info@redwavecomm.com</a></p>
             </div>
             <div class="col-md-19">
-                <div class="col-md-10">
+                <div class="col-md-10 contactForm">
                     <?php echo do_shortcode('[ninja_forms_display_form id=2]'); ?>
                 </div><!-- ninja form -->
                 <div class="col-md-11"></div>

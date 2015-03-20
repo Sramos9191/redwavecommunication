@@ -46,7 +46,7 @@
 
 					<!-- nav -->
 				<!--===================== Navbar coding ============================-->
-				<nav class="navbar navbar-fixed-top pull-right">
+				<nav class="nav navbar navbar-fixed-top pull-right">
 					<div class="col-md-24">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed col-sm-24 col-col-xs-24" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">

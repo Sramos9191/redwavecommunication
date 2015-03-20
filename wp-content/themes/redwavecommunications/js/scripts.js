@@ -22,6 +22,17 @@
 			//add the active class to the thing I just clicked on
 			if (!isActive) $menuItem.addClass('active');
 		});
+
+		//$().on('click', function () {
+		//	var $navItem = $(this), isActive = $navItem.hasClass('active');
+        //
+		//	//remove all active on this nav bar
+		//	$navItem.parents('.navabar')
+		//		.find('.navbar.active').removeClass('active');
+        //
+		//	//add the active class to the thing I just clicked on
+		//	if (!isActive) $navItem.addClass('active');
+		//});
 		
 	});
 	
