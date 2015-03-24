@@ -481,6 +481,8 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 function rw_homepage_residential_links() {
     $args = array(
         'post_type' => 'rw-home-page',
+        'order' => 'ASC',
+        'orderby' => 'date',
         'tax_query' => array(
             array(
                 'taxonomy' => 'link-type',
@@ -495,6 +497,8 @@ function rw_homepage_residential_links() {
 function rw_homepage_business_links() {
     $args = array(
         'post_type' => 'rw-home-page',
+        'order' => 'ASC',
+        'orderby' => 'date',
         'tax_query' => array(
             array(
                 'taxonomy' => 'link-type',

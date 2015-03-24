@@ -1,7 +1,29 @@
+/* =======================================================
+residential and business | system and service list styling
+========================================================*/
+#accordionPro213.basic ul li li, #accordionPro214.basic ul li li {
+    font: 1em Helvetica, Arial, sans-serif;
+    margin: 0 0 6px 26px;
+    font-weight: bold;
+    color: #323232;
+}
+
+#accordionPro213.noBullets ul li, #accordionPro214.noBullets ul li {
+  font: 1em Helvetica, Arial, sans-serif;
+  margin: 0 0 6px 15px;
+  font-weight: bold;
+  color: #323232;
+}
+
+
 /*============= bullets and such ==============*/
 
 .noBullets {
-  list-style-type: none;
+  list-style-type: disc;
+}
+
+.bullets {
+  list-style-type: disc;
 }
 
 /*============= get an estimate ===============*/
@@ -21,9 +43,9 @@
 }
 
 .content {
-  font: 1.3em Helvetica, Arial, sans-serif;
+  font: 1.2em Helvetica, Arial, sans-serif;
   line-height: 120%;
-  margin: 10px 0 0 40px !important;
+  margin: 0 20px 0 40px !important;
   padding: 0 25px 0 0 !important;
 }
 
@@ -41,6 +63,44 @@
   margin: 2px 0 0 10px;
 }
 
+/* ================= reverse accordion css ======================*/
+
+#accordionPro213 div .estimate, #accordionPro214 div .estimate {
+  background: #c21a24;
+  color: #fff;
+  width: 200px;
+  margin-left: 40px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+#accordionPro213 div .estimate:hover, #accordionPro214 div .estimate:hover {
+  background: #a71f35;
+}
+
+
+
+#accordionPro213.basic .slide>h2, #accordionPro214.basic .slide>h2 {
+  background: #ccc;
+  color: #323232;
+}
+
+#accordionPro213.basic .selected>h2, #accordionPro214.basic .selected>h2  {
+  background: #c21a24;
+  color: #fff;
+}
+
+
+
+#accordionPro213.rtl .slide>div, #accordionPro214.rtl .slide>div {
+  direction: ltr;
+  text-align: left;
+}
+
+#accordionPro213.horizontal.rtl .slide>h2 span, #accordionPro214.horizontal.rtl .slide>h2 span {
+  padding-left: 2%;
+}
+
 /* ============ accordion inside of an accordion ================== */
 
 ul {
@@ -48,8 +108,9 @@ ul {
 }
 
 .submenu {
+  font: 1em Helvetica, Arial, sans-serif;
   display: none;
-  margin-left: 0;
+  margin-left: 26px;
   padding-left: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -84,4 +145,10 @@ ul {
 
 .menuItem.noSubmenu {
   cursor: auto;
+}
+
+.menuItem ul li {
+  margin: 0;
+  padding: 0;
+
 }

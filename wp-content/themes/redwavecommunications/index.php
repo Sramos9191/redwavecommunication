@@ -6,7 +6,7 @@
 
 			<div class="col-md-24">
 				<div class="col-md-12" id="left">
-					<h4 class="red">RESIDENTIAL<br />SOLUTIONS</h4>
+					<h4 class="red">residential<br />solutions</h4>
 
 
 					<ul>
@@ -18,7 +18,7 @@
 
 		<?php $query = rw_homepage_business_links(); ?>
 				<div class="col-md-12" id="right">
-					<h4 class="red">BUSINESS<br /> SOLUTIONS</h4>
+					<h4 class="red">business<br /> solutions</h4>
 
 					<ul>
 						<?php if ($query->have_posts()): while($query->have_posts()): $query->the_post(); ?>
