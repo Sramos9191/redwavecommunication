@@ -23,13 +23,30 @@ ul {
     color: #a71f35;
 }
 
+.estimate {
+    background: #c21a24;
+    color: #fff;
+    width: 200px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.estimate:hover {
+    background: #a71f35;
+}
+
 .mag {
     color: #fff;
 }
 
 #navbar a {
-    padding: 12px 20px;
+    padding: 14px 20px;
     font: 1em Helvetica, Arial, sans-serif;
+}
+
+#navbar .current-menu-item {
+    padding: 0 0 2px 0;
+    background: #c21a24;
 }
 
 a {
@@ -91,7 +108,7 @@ navbar css
     border-bottom: 5px solid #a71f35;
     background: #a71f35;
     content: "";
-    padding: 3px 0 0 0;
+    padding: 0 0 0 0;
     left: 0;
     position: absolute;
     width: 100%;
@@ -109,9 +126,10 @@ navbar css
 }
 
 #navbar a {
-    height: 40px;
-    margin: 2px 0 0 0;
+    height: 44px;
+    margin: 0 0 0 0;
 }
+
 
 /* =======================================================
 search bar goodies
@@ -421,18 +439,18 @@ SYSTEMS STYLES
 /* ============= Information Div ================ */
 
 .infocontainer {
-    display: none;
-    margin: 0 0 0 0;
-    padding: 5px 15px;
-    font: 0.85em Helvetica, Arial, sans-serif;
-    background-color: rgba(255,255,255, .90);
-    position: absolute;
-    top: 100%;
-    left: -40px;
-    z-index: 1000;
-    width: 400px;
-    border: 2px solid #323232;
-}
+     display: none;
+     margin: 0 0 0 0;
+     padding: 5px 15px;
+     font: 0.85em Helvetica, Arial, sans-serif;
+     background-color: rgba(255,255,255, .90);
+     position: absolute;
+     top: 100%;
+     left: -40px;
+     z-index: 1000;
+     width: 400px;
+     border: 2px solid #323232;
+ }
 
 .infolist {
     margin: 10px 0 0 0;
@@ -484,6 +502,10 @@ SERVICE AND SYSTEMS STYLES SPECS
 CONTACT US STYLES
 ==========================================================================*/
 
+.contactPad {
+    padding: 0 0 0 15px;
+}
+
 .contact-container {
     min-height: 500px;
     padding: 10px 10px;
@@ -507,8 +529,10 @@ CONTACT US STYLES
     margin: 0 30px 0 0;
 }
 
+
 #contact-form input {
     font: 1.2em Helvetica, Arial, sans-serif;
+    margin: 0 0 0 50px;
     line-height: 185%;
     color: #323232;
 }
@@ -543,6 +567,25 @@ CONTACT US STYLES
 
 }
 
+/*=======================================================
+FOOTER ICONS
+=======================================================*/
+
+.footerItems ul li {
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    margin: 0 10px 0 0;
+}
+
+#1 div {
+    height: 50px;
+    height: 50px;
+    background-image: url('http://localhost:8080/wp-content/uploads/2015/02/bbb.png');
+}
+#1:hover {
+    background-image: url('http://localhost:8080/wp-content/uploads/2015/02/bbb-red.png');
+}
 
 
 /*=========================================================
@@ -610,6 +653,15 @@ MEDIA QUERIES
         display: block;
         width: 100%;
         text-align: center;
+    }
+
+    .infocontainer {
+        position: absolute;
+        top: 100%;
+        left: -40px;
+        z-index: 1000;
+        width: 170%;
+        border: 2px solid #323232;
     }
 
 }

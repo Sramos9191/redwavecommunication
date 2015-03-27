@@ -23,8 +23,9 @@
                     <?php echo the_content(); ?>
                 </div>
                 <div id="cert" class="col-md-10">
-                    <h4><strong><span class="red">CERTIFICATIONS</span></strong></h4>
-                    <?php echo types_render_field('about-certifications', array('output' => 'HTML'));  ?>
+                    <h4><strong><span class="red">CERTIFICATIONS & LICENSES</span></strong></h4>
+                    <?php echo types_render_field('about-certifications', array('output' => 'HTML'));  ?><br/>
+                    <div class="estimate"><a href="/contact-us">Get an estimate</a></div>
 
                 </div>
             </div>

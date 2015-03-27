@@ -6,8 +6,17 @@
 				<div class="col-md-4">
 					<span>&copy;2015 REDWAVE COMMUNICATIONS</span>
 				</div>
-			<div class="col-md-5">
-					<img src="<?php echo get_template_directory_uri() ?>/img/footer.png">
+			<div class="col-md-12 footerItems">
+				<ul>
+					<li><div id="1"></div></li>
+					<li><img id="2" src="http://localhost:8080/wp-content/uploads/2015/02/bicsi.png"></li>
+					<li><img id="3" src="http://localhost:8080/wp-content/uploads/2015/02/bsis.png"></li>
+					<li><img id="4" src="http://localhost:8080/wp-content/uploads/2015/02/cedia.png"></li>
+					<li><img id="5" src="http://localhost:8080/wp-content/uploads/2015/02/dvbe.png"></li>
+					<li><img id="6" src="http://localhost:8080/wp-content/uploads/2015/02/nfpa.png"></li>
+					<li><img id="7" src="http://localhost:8080/wp-content/uploads/2015/02/nicet.png"></li>
+					<li><img id="8" src="http://localhost:8080/wp-content/uploads/2015/02/rcdd.png"></li>
+				</ul>
 				</div>
 			<div class="col-md-14"></div>
 		</footer>

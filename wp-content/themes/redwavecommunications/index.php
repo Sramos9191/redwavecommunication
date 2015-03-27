@@ -11,7 +11,7 @@
 
 					<ul>
 						<?php if ($query->have_posts()): while($query->have_posts()): $query->the_post(); ?>
-						<li><?php the_title(); ?> ></li>
+						<li><a href="<?php types_render_field('link-type', array('output' => 'raw')); ?>"><?php the_title(); ?> ></a></li>
 						<? endwhile; endif; ?>
 					</ul>
 				</div><!-- left side column -->
@@ -22,7 +22,7 @@
 
 					<ul>
 						<?php if ($query->have_posts()): while($query->have_posts()): $query->the_post(); ?>
-						<li><?php the_title(); ?> ></li>
+						<li><a href="<?php the_title(); ?>"><?php the_title(); ?> ></a></li>
 						<? endwhile; endif; ?>
 					</ul>
 				</div><!-- right side column -->

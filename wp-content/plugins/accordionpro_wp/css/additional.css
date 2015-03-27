@@ -1,3 +1,23 @@
+/*======================
+accordion square
+======================*/
+
+
+.square::after {
+  display: inline;
+  content: ">";
+  text-align: center;
+  margin: 0 0 0 10px;
+  padding: 0 7px;
+  color: #fafafa;
+  background-color: #c21a24;
+  font-size: .8em;
+  height: 15px;
+}
+
+
+
+
 /* =======================================================
 residential and business | system and service list styling
 ========================================================*/
@@ -14,6 +34,20 @@ residential and business | system and service list styling
   font-weight: bold;
   color: #323232;
 }
+/* this makes the bullet class have a margin to line it up with service, systems, and brands on residential accordion*/
+/*also gives it a bold and dark grey style*/
+#accordionPro213 .bullets, #accordionPro214 .bullets {
+  margin: 0 0 0 20px;
+  padding: 0 0 0 0;
+  font-weight: bold;
+  color: #323232;
+}
+
+/* this makes the collapsible menu in the accordions font bold and dark grey */
+#accordionPro213 .collapsibleMenu, #accordionPro214 .collapsibleMenu {
+  font-weight: bold;
+  color: #323232;
+}
 
 
 /*============= bullets and such ==============*/
@@ -24,6 +58,10 @@ residential and business | system and service list styling
 
 .bullets {
   list-style-type: disc;
+}
+
+.active {
+  color: #c21a24;
 }
 
 /*============= get an estimate ===============*/
@@ -97,8 +135,8 @@ residential and business | system and service list styling
   text-align: left;
 }
 
-#accordionPro213.horizontal.rtl .slide>h2 span, #accordionPro214.horizontal.rtl .slide>h2 span {
-  padding-left: 2%;
+#accordionPro213.horizontal .slide>h2 span, #accordionPro214.horizontal .slide>h2 span {
+  padding-right: 2%;
 }
 
 /* ============ accordion inside of an accordion ================== */
@@ -133,6 +171,7 @@ ul {
 
 .menuItem.active::before {
   content: "-";
+  color: #c21a24;
   display: inline-block;
   margin-right: 5px;
 }
