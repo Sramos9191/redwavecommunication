@@ -1,0 +1,667 @@
+/* ===================================================
+General
+=====================================================*/
+ul {
+    padding-left: 0;
+}
+
+.row {
+    margin: 0 0;
+}
+
+.pad {
+    padding: 0 15px;
+}
+
+.bulletlist {
+    margin: 0 0 0 20px;
+    padding: 0 0 0 0;
+    list-style: disc;
+}
+
+.red {
+    color: #a71f35;
+}
+
+.estimate {
+    background: #c21a24;
+    color: #fff;
+    width: 200px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.estimate:hover {
+    background: #a71f35;
+}
+
+.mag {
+    color: #fff;
+}
+
+#navbar a {
+    padding: 14px 20px;
+    font: 1em Helvetica, Arial, sans-serif;
+}
+
+#navbar .current-menu-item {
+    padding: 0 0 2px 0;
+    background: #c21a24;
+}
+
+a {
+    color: #a71f35;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #c21a24;
+    text-decoration: none;
+}
+
+.buttons {
+    padding: 0 0 0 5px;
+}
+
+.display {
+    display: block !important;
+}
+
+
+p {
+    font: 1.3em Helvetica, Arial, sans-serif;
+    line-height: 120%;
+    margin-bottom: 18px;
+    color: #323232;
+}
+
+
+
+/* ======================================================
+navbar css
+=======================================================*/
+
+.navbar {
+    min-height: 44px;
+}
+
+.navbar-form {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.navbar-nav > li > a {
+    line-height: 12px;
+}
+
+.navbar li a {
+    color: #fafafa;
+}
+
+.navbar li a:hover, .navbar li a:focus {
+    background: #a71f35;
+}
+
+
+
+.navbar ul li:hover:after {
+    border-bottom: 5px solid #a71f35;
+    background: #a71f35;
+    content: "";
+    padding: 0 0 0 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#navbar {
+    background: #5b5b5b;
+    font: 1em Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    z-index: 10;
+    min-height: 44px;
+
+}
+
+#navbar a {
+    height: 44px;
+    margin: 0 0 0 0;
+}
+
+
+/* =======================================================
+search bar goodies
+=========================================================*/
+
+#searchdiv {
+    margin: 0 0;
+    padding: 0 5px;
+}
+
+#search {
+    margin: 5px 5px;
+    padding-left: 10px;
+    border-radius: 25px;
+}
+
+.search-input input[type="text"] {
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+
+/* ========================================================
+logo container
+=========================================================*/
+
+.logo {
+    margin: 70px 0 20px 20px;
+    height: auto;
+}
+
+#tagline {
+    color: #5b5b5b;
+    font: italic 1.6em "Times New Roman";
+    position: absolute;
+    top: 90px;
+    left: 260px;
+}
+
+/* =====================================================
+footer Stuffs
+======================================================*/
+
+footer {
+    margin: 30px 0 0 30px;
+    position: relative;
+    bottom: 0;
+    background-color: #fff;
+}
+
+#footer span {
+    position: relative;
+    top: 20px;
+    font: 0.875em Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+}
+
+#footer img {
+    padding: 10px 0 10px 0;
+}
+
+/* ==================================================================
+ABOUT US STYLES
+===================================================================*/
+
+.about-container {
+    min-height: 600px;
+}
+
+.about-top {
+    background: #a71f35 url("img/about-us.png") no-repeat left;
+    background-size: 100% 100%;
+    padding: 10px 20px;
+    height: 319px;
+}
+.about-top p {
+    font: 1.1em Helvetica, Arial, sans-serif;
+    color: #fafafa;
+    padding: 20px 10px;
+    margin: 0 0 0 15px;
+    line-height: 280%
+}
+
+.about-bottom {
+    margin: 0 20px 0 0;
+    padding: 20px 20px 20px 7px;
+    min-height: 350px;
+    text-align: left;
+}
+
+.about-bottom a{
+    color: #323232;
+
+}
+
+#cert {
+    padding:0 30px;
+}
+
+#cert h4 {
+
+    margin: 0 0 15px 0;
+}
+
+#about p {
+    color: #fafafa;
+    font: 1.2em Helvetica, Arial, sans-serif;
+    padding: 45px 0;
+    margin: 0 0 0 30px;
+    line-height: 300%;
+}
+
+.bottomexpand {
+    font: 30px Helvetica,Arial,sans-serif;
+    position: relative;
+    top: 195px;
+    letter-spacing: 4px;
+}
+
+/* ========================================================================
+RESIDENTIAL AND BUSINESS STYLES
+=========================================================================*/
+
+#main-container {
+    width: 100%;
+    height: 100%;
+    padding: 0 0;
+    margin: 0 0 0 0;
+}
+#left {
+    background: #fff url("img/left-side-front.png") no-repeat right;
+    background-size: cover;
+    margin: 0 0;
+    padding: 10px 20px 0 0;
+    border-right: 12px solid #fff;
+    min-height: 419px;
+    text-align: right;
+}
+
+#left h4, #right h4 {
+    font: 2.25em Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    color: #a71f35;
+    line-height: 104%;
+}
+
+#left li {
+    font: 16px Helvetica,Arial,sans-serif;
+    margin-bottom: 15px;
+    padding: 5px 0 0 0;
+}
+
+#right {
+    background: #fff url("img/right-side-front.png") no-repeat left;
+    background-size: cover;
+    margin: 0 0;
+    padding: 10px 0 0 20px;
+    border-left: 12px solid #fff;
+    min-height: 419px;
+    text-align: left;
+}
+
+#right ul li {
+    font: 16px Helvetica, Arial, sans-serif;
+    padding: 5px 0 0 0;
+}
+
+#getestimate {
+    padding: 10px 0;
+    position: absolute;
+    background-color: #a71f35;
+    font: 1em Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    opacity: .90;
+    z-index: 3;
+    top: 80%;
+    left: 45%;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+}
+
+#getestimate:hover {
+    background-color: #c21a24;
+}
+
+#getestimate a, #getestimate a:hover {
+    color: #fafafa;
+}
+
+.business-container{
+    min-height: 470px;
+    padding: 0 0 10px 0;
+    margin: 0 20px;
+    list-style: none;
+}
+
+.business-container a:hover, a:focus {
+    color: #a71f35;
+}
+
+/*=================================================================
+BUSINESS AND RESIDENTIAL ACCORDION STYLES
+=================================================================*/
+
+
+
+
+.serviceList ul li {
+    font-weight: 800;
+    list-style: none;
+
+}
+
+/* =================================================================
+SERVICES STYLES
+==================================================================*/
+
+#service {
+    margin: 0 10%;
+}
+
+#service-img {
+    margin: 0 0 20px 11%;
+}
+
+.service {
+    background-color: #a71f35;
+    color: #fff;
+    margin: 0 0 10px 0;
+    width: 100%;
+    height: 225px;
+    position: relative;
+    text-align: left;
+}
+
+.service h4 {
+    margin: 0 0 0 10px;
+}
+
+.bottom-span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.servicedesc {
+    margin: 0 0 20px 0;
+    width: auto;
+    min-height: 200px;
+}
+
+/*====================================================================
+SYSTEMS STYLES
+=====================================================================*/
+
+
+.image {
+    position: relative;
+    width: 196px;
+    height: 156px;
+    background: #fff;
+}
+
+.row {
+    margin-bottom: 25px;
+}
+
+.system {
+    height: 176px;
+    width: 216px;
+    float: left;
+    margin: 20px 0 10px 40px;
+}
+
+.all-systems {
+    margin-top: 30px;
+}
+
+#residentialSys {
+    padding: 8px;
+    margin: -20px 20px 0 0;
+    background: #c21a24;
+    z-index: 100;
+    color: #fafafa;
+    font: 1.3em Helvetica, Arial, sans-serif;
+}
+
+#residentialSys:hover, #residentialSys:focus {
+    background: #a71f35;
+    color: #fafafa;
+}
+
+.headpad {
+    padding: 0 0 0 15px;
+    font-size: 1.0em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    width: 180px;
+}
+
+/* ============= Information Div ================ */
+
+.infocontainer {
+     display: none;
+     margin: 0 0 0 0;
+     padding: 5px 15px;
+     font: 0.85em Helvetica, Arial, sans-serif;
+     background-color: rgba(255,255,255, .90);
+     position: absolute;
+     top: 100%;
+     left: -40px;
+     z-index: 1000;
+     width: 400px;
+     border: 2px solid #323232;
+ }
+
+.infolist {
+    margin: 10px 0 0 0;
+    padding: 0 0;
+    list-style: disc;
+}
+
+.sys-desc {
+    margin: 0 0 0 0;
+    padding: 0 10px;
+    line-height: 150%;
+}
+
+#tool-tip {
+    opacity: .90;
+    position: absolute;
+    top: -25px;
+    left: 30%;
+}
+
+/* =======================================================================
+SERVICE AND SYSTEMS STYLES SPECS
+=========================================================================*/
+
+.servsysSubheads {
+    font: 1.5em Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #c21a24;
+}
+
+.servsysBullets {
+    font: 1em Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 0 0 0 17px;
+    margin-bottom: 6px;
+    color: #323232;
+    list-style: disc;
+}
+
+.servsysBullets li {
+    color: #5b5b5b;
+    font: 1em bold Helvetica, Arial, sans-serif;
+}
+
+
+
+/* ========================================================================
+CONTACT US STYLES
+==========================================================================*/
+
+.contactPad {
+    padding: 0 0 0 15px;
+}
+
+.contact-container {
+    min-height: 500px;
+    padding: 10px 10px;
+}
+
+.contactForm {
+    font: 1.2em Helvetica, Arial, sans-serif;
+    line-height: 185%;
+    color: #323232;
+}
+
+.contactadd h3 {
+    font: 1.5em Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+#contact-info {
+    height: auto;
+    margin: 0 30px 0 0;
+}
+
+
+#contact-form input {
+    font: 1.2em Helvetica, Arial, sans-serif;
+    margin: 0 0 0 50px;
+    line-height: 185%;
+    color: #323232;
+}
+
+#contact {
+    margin: 0 0 0 60px;
+}
+
+#contact h1 {
+    margin: 0 0 40px 0;
+}
+
+.submit {
+    border-radius: 0;
+    background: #a71f35;
+    color: #fff;
+    font: 1.2em Helvetica, Arial, sans-serif;
+    padding: 5px 20px;
+}
+
+.submit:hover, .submit:focus {
+    background: #c21a24;
+
+}
+/* ============== Descriptions Box ================*/
+
+.description {
+    width: 25%;
+    margin: 0 0 20px 3px;
+    padding: 0 0 0 0;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+/*=======================================================
+FOOTER ICONS
+=======================================================*/
+
+.footerItems ul li {
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    margin: 0 10px 0 0;
+}
+
+#1 div {
+    height: 50px;
+    height: 50px;
+    background-image: url('http://localhost:8080/wp-content/uploads/2015/02/bbb.png');
+}
+#1:hover {
+    background-image: url('http://localhost:8080/wp-content/uploads/2015/02/bbb-red.png');
+}
+
+
+/*=========================================================
+MEDIA QUERIES
+==========================================================*/
+
+@media only screen and (max-width: 750px) {
+
+    #searchdiv {
+        display: none;
+    }
+
+    #left {
+        background-image: none;
+        border: 1px solid #323232;
+        margin: 5px 0;
+        padding: 15px 0;
+        min-height: 200px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #right {
+        background-image: none;
+        border: 1px solid #323232;
+        margin: 5px 0;
+        padding: 10px 0;
+        min-height: 200px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #getestimate {
+        padding: 15px 0;
+        position: absolute;
+        background-color: #883333;
+        z-index: 9999;
+        top: 55%;
+        left: 32%;
+        height: 50px;
+        width: 150px;
+        text-align: center;
+    }
+
+    #footer {
+        height: 100px;
+        width: 100%;
+        font-weight: 500;
+        overflow: hidden;
+    }
+
+    #footer span {
+        position: relative;
+        top: 0;
+        margin: 30px 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .navbar-form {
+        padding: 0 0 5px 20px;
+        width: 50%;
+    }
+
+    #navbar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .infocontainer {
+        position: absolute;
+        top: 100%;
+        left: -40px;
+        z-index: 1000;
+        width: 170%;
+        border: 2px solid #323232;
+    }
+
+}
