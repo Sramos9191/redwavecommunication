@@ -41,6 +41,7 @@
 ;(function($) {
 
   var AccordionPro = function(elem, options) {
+
     var defaults = {},
         settings = {},
         methods = {},
@@ -429,6 +430,7 @@
 
       // bind hashchange event
       if (settings.linkable) {
+
         $(window).on('load.accordionPro hashchange.accordionPro', function(e) {
           var url = slides.filter(function() {
             return $(this).attr('data-slide-name') === window.location.hash.split('#')[1];
@@ -869,4 +871,3 @@
   };
 
 })(jQuery);
-

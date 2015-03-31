@@ -8,7 +8,7 @@
 				</div>
 			<div class="col-md-12 footerItems">
 				<ul>
-					<li><div id="1"></div></li>
+					<li><img id="1" src="http://localhost:8080/wp-content/uploads/2015/02/bbb.png"></li>
 					<li><img id="2" src="http://localhost:8080/wp-content/uploads/2015/02/bicsi.png"></li>
 					<li><img id="3" src="http://localhost:8080/wp-content/uploads/2015/02/bsis.png"></li>
 					<li><img id="4" src="http://localhost:8080/wp-content/uploads/2015/02/cedia.png"></li>
