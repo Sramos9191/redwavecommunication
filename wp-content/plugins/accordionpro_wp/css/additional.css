@@ -2,17 +2,10 @@
 accordion square
 ======================*/
 
-
-.square::after {
-  display: inline;
-  content: '>';
-  text-align: center;
-  margin: 0 0 0 10px;
-  padding: 0 7px;
-  color: #fafafa;
-  background-color: #c21a24;
-  font-size: .8em;
-  height: 15px;
+img.square {
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: 5px !important;
 }
 
 
