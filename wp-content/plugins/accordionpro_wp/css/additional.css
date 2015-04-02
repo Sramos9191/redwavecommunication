@@ -134,10 +134,12 @@ residential and business | system and service list styling
   padding-right: 2%;
 }
 
+#accordionPro213.horizontal .slide>h2 span,
 #accordionPro214.horizontal .slide>h2 span {
     text-align: left;
 }
 
+#accordionPro213.horizontal .slide>h2,
 #accordionPro214.horizontal .slide>h2 {
     padding-right: 20px;
     padding-bottom: 10px;
