@@ -510,5 +510,54 @@ function rw_homepage_business_links() {
     return new WP_Query( $args );
 }
 
+add_shortcode('residential_systems', 'residential_systems');
+function residential_systems()
+{
+    global $post;
+
+    $args = array(
+        'link-type' => 'residential',
+        'post_status' => 'publish',
+        'order' => 'ASC',
+        'orderby' => 'title',
+    );
+
+    $markup = array();
+    $loop = new WP_Query($args);
+    if ($loop->have_posts()) {
+        while ($loop->have_posts()) {
+            $loop->the_post();
+            $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full', false, '');
+
+            $the_markup = sprintf("<div class='system'><div class='image' style='background: url(%s)'", $src[0]);
+            $the_markup .= " center no-repeat; background-size: cover;'>
+                                                <div class='infocontainer infolist'>
+                                                    <img id='tool-tip' src='img/tool-tip.png'>
+                                                    <p>";
+
+            $the_markup .= types_render_field('system-description',
+                array('output' => 'html'));
+            $the_markup .= "
+                                        </p>
+                                        <h5><strong>BRANDS</strong></h5>
+                                        <ul class='bulletlist'>
+                                            <li>";
+            $the_markup .= types_render_field('system-list',
+                array('output' => 'html', 'separator' => '<li></li>'));
+            $the_markup .= "
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>";
+
+
+            $markup[] = $the_markup;
+        }
+    }
+
+    return sprintf("<div class='systems'>%s</div>",
+        implode('', $markup));
+}
 
 ?>
