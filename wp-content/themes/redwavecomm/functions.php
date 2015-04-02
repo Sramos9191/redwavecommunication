@@ -480,9 +480,8 @@ function residential_systems()
             $loop->the_post();
             $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full', false, '' );
             
-            $the_markup = "<div class='systems'> 
-                                <div class='system'>
-                                    <div class='image' style='background:url('" . $src[0] . "')";
+            $the_markup = "<div class='system'>
+            $the_markup = sprintf("<div class='system'><div class='image' style='background: url(%s)'", $src[0]);
 
             
             $the_markup .= " center no-repeat; background-size: cover;'>
@@ -504,8 +503,7 @@ function residential_systems()
                                         </ul>
                                     </div> 
                                 </div>
-                            </div>
-                        </div>";
+                            </div>";
     
             $markup[] = $the_markup;
         }
