@@ -118,25 +118,37 @@ residential and business | system and service list styling
 
 
 
-#accordionPro213.basic .slide>h2, #accordionPro214.basic .slide>h2 {
+#accordionPro213.basic .slide>h2,
+#accordionPro214.basic .slide>h2 {
   background: #ccc;
   color: #323232;
 }
 
-#accordionPro213.basic .selected>h2, #accordionPro214.basic .selected>h2  {
+#accordionPro213.basic .selected>h2,
+#accordionPro214.basic .selected>h2  {
   background: #c21a24;
   color: #fff;
 }
 
 
 
-#accordionPro213.rtl .slide>div, #accordionPro214.rtl .slide>div {
+#accordionPro213.rtl .slide>div,
+#accordionPro214.rtl .slide>div {
   direction: ltr;
   text-align: left;
 }
 
-#accordionPro213.horizontal .slide>h2 span, #accordionPro214.horizontal .slide>h2 span {
+#accordionPro213.horizontal .slide>h2 span,
+#accordionPro214.horizontal .slide>h2 span {
+  transform: rotate(-180deg);
   padding-right: 2%;
+  text-align:left;
+}
+
+#accordionPro213.horizontal .slide>h2,
+#accordionPro214.horizontal .slide>h2 {
+  padding-bottom: 10px;
+  padding-right: 20px;
 }
 
 /* ============ accordion inside of an accordion ================== */

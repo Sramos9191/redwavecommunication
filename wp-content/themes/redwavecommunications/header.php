@@ -29,40 +29,42 @@
 		<!-- wrapper -->
 		<div class="col-md-24">
 
+			<!--===================== Navbar coding ============================-->
+			<nav class="navbar navbar-fixed-top center-block">
+				<div class="col-md-24">
+					<div class="navbar-header navbar-fixed-top">
+						<button type="button" class="navbar-toggle collapsed col-sm-24 col-col-xs-24" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-fixed-top navbar-collapse col-sm-24 col-xs-24" id="navbar">
+						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-search')) ?>
+						<?php redwave_nav(); ?>
+					</div><!-- dynamic navbar -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+
+			<!--========================== Navbar End ========================-->
+
 			<!-- header -->
 			<header class="header clear" role="banner">
 
-					<!-- logo -->
-					<div class="logo">
+				<div class="container-fluid">
+					<div class="logo col-md-4 col-xs-24">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
 						</a>
+					</div> <!-- logo -->
+					<div class="col-md-15 col-xs-24">
 						<span id="tagline"><?php bloginfo('description'); ?></span><br />
-					</div>
+					</div><!-- tagline -->
+
+				</div><!-- container fluid -->
 
 
-					<!-- /logo -->
-
-					<!-- nav -->
-				<!--===================== Navbar coding ============================-->
-				<nav class="nav navbar navbar-fixed-top pull-right">
-					<div class="col-md-24">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed col-sm-24 col-col-xs-24" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="collapse navbar-collapse col-sm-24 col-xs-24" id="navbar">
-						<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-search')) ?>
-						<?php redwave_nav(); ?>
-							</div>
-					</div><!-- /.container -->
-				</nav><!-- /.navbar -->
-
-				<!--========================== Navbar End ========================-->
 			</header>
 			<!-- /header -->

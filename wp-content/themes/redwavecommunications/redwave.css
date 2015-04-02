@@ -80,9 +80,19 @@ p {
 /* ======================================================
 navbar css
 =======================================================*/
+.navbar-toggle {
+    border: 1px solid #323232;
+    margin: 5px 0;
+    margin-right: 15px;
+}
+
+.icon-bar {
+    background: #fafafa;
+}
 
 .navbar {
     min-height: 44px;
+    background: #5b5b5b;
 }
 
 .navbar-form {
@@ -165,8 +175,8 @@ logo container
     color: #5b5b5b;
     font: italic 1.6em "Times New Roman";
     position: absolute;
-    top: 90px;
-    left: 260px;
+    top: 95px;
+    left: 0;
 }
 
 /* =====================================================
@@ -182,7 +192,7 @@ footer {
 
 #footer span {
     position: relative;
-    top: 20px;
+    top: 25px;
     font: 0.875em Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 
@@ -598,6 +608,14 @@ MEDIA QUERIES
         display: none;
     }
 
+    #tagline {
+        position: static;
+    }
+
+    .pull-right {
+        float: none !important;
+    }
+
     #left {
         background-image: none;
         border: 1px solid #323232;
@@ -611,7 +629,7 @@ MEDIA QUERIES
     #right {
         background-image: none;
         border: 1px solid #323232;
-        margin: 5px 0;
+        margin: 20px 0;
         padding: 10px 0;
         min-height: 200px;
         width: 100%;
@@ -622,13 +640,13 @@ MEDIA QUERIES
         padding: 15px 0;
         position: absolute;
         background-color: #883333;
-        z-index: 9999;
-        top: 55%;
-        left: 32%;
+        top: 62%;
+        left: 31%;
         height: 50px;
         width: 150px;
         text-align: center;
     }
+
 
     #footer {
         height: 100px;
@@ -653,6 +671,10 @@ MEDIA QUERIES
         display: block;
         width: 100%;
         text-align: center;
+    }
+
+    #navbar {
+        margin: 44px 0;
     }
 
     .infocontainer {
