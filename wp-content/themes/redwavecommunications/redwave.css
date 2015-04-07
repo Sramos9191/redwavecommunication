@@ -313,6 +313,11 @@ RESIDENTIAL AND BUSINESS STYLES
     padding: 5px 0 0 0;
 }
 
+
+#mainPage {
+    position: static;
+}
+
 #getestimate {
     padding: 10px 0;
     position: absolute;
@@ -321,7 +326,7 @@ RESIDENTIAL AND BUSINESS STYLES
     font-weight: bold;
     opacity: .90;
     z-index: 3;
-    top: 80%;
+    top: 84%;
     left: 45%;
     height: 40px;
     width: 150px;
@@ -463,7 +468,7 @@ SYSTEMS STYLES
  }
 
 .infolist {
-    margin: 10px 0 0 0;
+    margin: 10px 0 15px 0;
     padding: 0 0;
     list-style: disc;
 }
@@ -601,6 +606,29 @@ FOOTER ICONS
 /*=========================================================
 MEDIA QUERIES
 ==========================================================*/
+@media only screen and (max-width: 970px) {
+
+    #getestimate {
+        padding: 15px 0;
+        position: absolute;
+        background-color: #883333;
+        top: 57%;
+        left: 40%;
+        height: 50px;
+        width: 150px;
+        text-align: center;
+    }
+    .logo-img {
+        position: relative;
+        top: 30px;
+    }
+    #tagline {
+        position: relative;
+        top: 0px;
+    }
+
+}
+
 
 @media only screen and (max-width: 750px) {
 
@@ -686,4 +714,9 @@ MEDIA QUERIES
         border: 2px solid #323232;
     }
 
+    .infolist {
+        padding: 0 5px 0 0;
+    }
+
 }
+
