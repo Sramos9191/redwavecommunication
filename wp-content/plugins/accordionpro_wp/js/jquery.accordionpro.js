@@ -318,7 +318,8 @@
             hashPieces = hash.split('-'), slide;
 
           slide = hashPieces[hashPieces.length -1];
-          debugger;
+
+          if (slide === "") slide = settings.firstSlide;
         }
 
         slides.eq(slide !== undefined ? slide - 1 : settings.firstSlide - 1).addClass('selected');
