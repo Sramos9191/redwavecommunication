@@ -313,7 +313,15 @@
 
       // account for already selected slide if startClosed option not enabled
       if (!selected.length && !settings.startClosed) {
-        slides.eq(settings.firstSlide - 1).addClass('selected');
+        if (settings.linkable) {
+          var hash = window.location.hash,
+            hashPieces = hash.split('-'), slide;
+
+          slide = hashPieces[hashPieces.length -1];
+          debugger;
+        }
+
+        slides.eq(slide !== undefined ? slide - 1 : settings.firstSlide - 1).addClass('selected');
         selected = slides.filter('.selected');
       }
 

@@ -452,7 +452,7 @@ class accordion_pro {
     wp_enqueue_script('jquery');
 
     // Register Accordion JS
-    wp_register_script('accordion_pro', WP_PLUGIN_URL . '/accordionpro_wp/js/jquery.accordionpro.js', array('jquery'), '2.0.0', false);
+//    wp_register_script('accordion_pro', WP_PLUGIN_URL . '/accordionpro_wp/js/jquery.accordionpro.js', array('jquery'), '2.0.0', false);
   }
 
   /**
@@ -507,8 +507,9 @@ class accordion_pro {
   public function get_accordion($atts) {
     if (isset($atts) && is_array($atts)) {
       // load accordion js only into page with shortcode
-      wp_enqueue_script('accordion_pro');
+//      wp_enqueue_script('accordion_pro');
 
+//      wp_enqueue_script('accordion_pro', WP_PLUGIN_URL . '/accordionpro_wp/js/jquery.accordionpro.js');
       // cached accordion html
       $accordion = $this->get_accordion_settings($atts['id']);
 
