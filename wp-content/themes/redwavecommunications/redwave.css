@@ -720,3 +720,8 @@ MEDIA QUERIES
 
 }
 
+.tool-tip {
+    background-image: url(/wp-content/themes/redwavecommunications/img/tool-tip.png);
+    height: 25px;
+    width: 25px;
+}
