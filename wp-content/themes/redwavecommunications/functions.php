@@ -107,14 +107,16 @@ function html5blank_header_scripts()
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
 
-        wp_register_script('jQueryUI', get_template_directory_uri() . '/scripts/jqueryui/jquery-ui.min.js', array('jqueryui'), '1.11.3', true); //jQuery UI
-        wp_enqueue_script('jQueryUI'); // Enqueue it!
-
-        wp_register_script('jQuery', get_template_directory_uri() . '/scripts/jquery/jquery-2.1.3.js', array(), '2.1.3'); //jQuery
-        wp_enqueue_script('jQuery'); //Enqueue it!
+//        wp_register_script('jQuery', get_template_directory_uri() . '/scripts/jquery/jquery-2.1.3.js', array(), '2.1.3'); //jQuery
+//        wp_enqueue_script('jQuery'); //Enqueue it!
+//
+//        wp_register_script('jQueryUI', get_template_directory_uri() . '/scripts/jqueryui/jquery-ui.min.js', array('jqueryui'), '1.11.3', true); //jQuery UI
+//        wp_enqueue_script('jQueryUI'); // Enqueue it!
 
         wp_register_script('bootstrapsjs', get_template_directory_uri() . '/scripts/bootstraps/js/bootstrap.min.js', array(), '3.3.2', true); //Bootstraps
         wp_enqueue_script('bootstrapsjs'); //Enqueue it!
+
+        wp_enqueue_script('accordion_pro', WP_PLUGIN_URL . '/accordionpro_wp/js/jquery.accordionpro.js');
     }
 }
 
@@ -510,5 +512,48 @@ function rw_homepage_business_links() {
     return new WP_Query( $args );
 }
 
+add_shortcode('residential_systems', 'residential_systems');
+function residential_systems()
+{
+    global $post;
+
+    $args = array(
+        'post-type' => 'rw-system',
+        'order' => 'ASC',
+        'orderby' => 'date',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'link-type',
+                'field'    => 'slug',
+                'terms'    => 'residential',
+    );
+
+    $markup = array();
+    $loop = new WP_Query($args);
+    if ($loop->have_posts()) {
+        while ($loop->have_posts()) {
+            $loop->the_post();
+            $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full', false, '');
+
+            $the_markup = sprintf("<div class='system'>< class='image' style='background: url(%s) center no-repeat; background-size: cover;'>", $src[0]);
+            $the_markup = "<div class='infocontainer infolist'> <img id='tool-tip' src='img/tool-tip.png'> <p>";
+            $the_markup .= types_render_field('system-description', array('output' => 'html'));
+            $the_markup .= "</p> <h5><strong>BRANDS</strong></h5> <ul class='bulletlist'> <li>";
+            $the_markup .= types_render_field('system-list', array('output' => 'html', 'separator' => '<li></li>'));
+            $the_markup .= "
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>";
+
+
+            $markup[] = $the_markup;
+        }
+    }
+
+    return sprintf("<div class='systems'>%s</div>",
+        implode('', $markup));
+}
 
 ?>
