@@ -1,6 +1,5 @@
-/*======================
-accordion square
-======================*/
+/*-------- accordion inner red square -------*/
+
 
 img.square {
   width: 20px !important;
@@ -11,8 +10,8 @@ img.square {
 
 
 
-/* =======================================================
-residential and business | system and service list styling
+/*========================================================
+RESIDENTIAL AND BUSINESS | SYSTEM AND SERVICE LIST STYLING
 ========================================================*/
 #accordionPro213.basic ul li li, #accordionPro214.basic ul li li {
     font: 1em Helvetica, Arial, sans-serif;
@@ -43,7 +42,10 @@ residential and business | system and service list styling
 }
 
 
-/*============= bullets and such ==============*/
+/*========================================================
+BULLETS AND SUCH
+========================================================*/
+
 
 .noBullets {
   list-style-type: disc;
@@ -57,7 +59,28 @@ residential and business | system and service list styling
   color: #c21a24;
 }
 
-/*============= get an estimate ===============*/
+/*--------- overall row padding --------------*/
+#accordionPro213 .accordionPad div {
+  padding: 15px 0 0 0;
+}
+
+#accordionPro214 .accordionPad div {
+  padding: 15px 0 0 0;
+}
+
+/*------padding for the ul tags -------*/
+
+#accordionPro213 .row ul {
+  padding: 5px 0 0 0;
+}
+
+#accordionPro214 .row ul {
+  padding: 5px 0 0 0;
+}
+
+/*========================================================
+GET AND ESTIMATE BUTTON MODE
+========================================================*/
 
 #accordionPro175 div .estimate, #accordionPro176 div .estimate {
   background: #a71f35;
@@ -94,7 +117,9 @@ residential and business | system and service list styling
   margin: 2px 0 0 10px;
 }
 
-/* ================= reverse accordion css ======================*/
+/*========================================================
+REVERSE ACCORDION CSS
+========================================================*/
 
 #accordionPro213 div .estimate, #accordionPro214 div .estimate {
   background: #c21a24;
@@ -146,7 +171,14 @@ residential and business | system and service list styling
 }
 
 
-/* ============ accordion inside of an accordion ================== */
+/*========================================================
+ACCORDION INSIDE OF AN ACCORDION
+========================================================*/
+
+li .noSubmenu {
+  margin-left: 20px;
+  padding-left: 20px;
+}
 
 ul {
   list-style-type: none;
@@ -191,6 +223,11 @@ ul {
 
 .menuItem.noSubmenu {
   cursor: auto;
+}
+
+.menuItem.noSubmenu::before {
+  content: "";
+  margin-left: 10px;
 }
 
 .menuItem ul li {

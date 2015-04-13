@@ -7,7 +7,7 @@
                 <img src="http://localhost:8080/wp-content/uploads/2015/02/systems2.png" alt="business systems">
             </h1>
             <div class="row">
-            <a class="pull-right" id="residentialSys" href="#">View Residential Systems</a>
+            <a class="pull-right" id="residentialSys" href="http://localhost:8080/residential/#accordionPro214-slide-5">View Residential Systems</a>
             </div>
             <div class="row">
                 <p class="headpad">

@@ -140,7 +140,6 @@ navbar css
     margin: 0 0 0 0;
 }
 
-
 /* =======================================================
 search bar goodies
 =========================================================*/
@@ -160,7 +159,9 @@ search bar goodies
     padding: 5px 5px;
     margin: 5px 5px;
 }
-
+.form-group {
+    padding-left: 10px;
+}
 
 /* ========================================================
 logo container
@@ -231,7 +232,7 @@ ABOUT US STYLES
 
 .about-bottom {
     margin: 0 20px 0 0;
-    padding: 20px 20px 20px 7px;
+    padding: 30px 20px 20px 7px;
     min-height: 350px;
     text-align: left;
 }
@@ -242,7 +243,7 @@ ABOUT US STYLES
 }
 
 #cert {
-    padding:0 30px;
+    padding: 0 70px 0 30px;
 }
 
 #cert h4 {
@@ -252,10 +253,10 @@ ABOUT US STYLES
 
 #about p {
     color: #fafafa;
-    font: 1.2em Helvetica, Arial, sans-serif;
+    font: 1.1em Helvetica, Arial, sans-serif;
     padding: 45px 0;
     margin: 0 0 0 30px;
-    line-height: 300%;
+    line-height: 200%;
 }
 
 .bottomexpand {
@@ -357,8 +358,6 @@ BUSINESS AND RESIDENTIAL ACCORDION STYLES
 =================================================================*/
 
 
-
-
 .serviceList ul li {
     font-weight: 800;
     list-style: none;
@@ -432,7 +431,7 @@ SYSTEMS STYLES
 
 #residentialSys {
     padding: 8px;
-    margin: -20px 20px 0 0;
+    margin: -20px 23px 0 0;
     background: #c21a24;
     z-index: 100;
     color: #fafafa;
@@ -446,8 +445,7 @@ SYSTEMS STYLES
 
 .headpad {
     padding: 0 0 0 15px;
-    font-size: 1.0em;
-    font-family: Helvetica, Arial, Sans-Serif;
+    font: 1.0em Helvetica, Arial, Sans-Serif;
     width: 180px;
 }
 
@@ -468,10 +466,16 @@ SYSTEMS STYLES
  }
 
 .infolist {
-    margin: 10px 0 15px 0;
-    padding: 0 0;
+    margin: 10px 0 10px 0;
+    padding: 0 0 0 10px;
     list-style: disc;
 }
+
+.infolist ul li {
+    margin: 3px 0 0 -4px;
+    padding: 0 0 0 0;
+}
+
 
 .sys-desc {
     margin: 0 0 0 0;
@@ -482,7 +486,7 @@ SYSTEMS STYLES
 #tool-tip {
     opacity: .90;
     position: absolute;
-    top: -25px;
+    top: -35px;
     left: 30%;
 }
 
@@ -517,8 +521,21 @@ SERVICE AND SYSTEMS STYLES SPECS
 CONTACT US STYLES
 ==========================================================================*/
 
+.text-wrap.label-inside input {
+    width: 50%;
+}
+.text-wrap.label-inside textarea {
+    width: 100%;
+}
+
 .contactPad {
-    padding: 0 0 0 15px;
+    padding: 5px 0 5px 15px;
+    border: 1px solid #323232;
+    width: 50% !important;
+}
+
+#ninja_forms_field_15 {
+    border: 1px solid #323232;
 }
 
 .contact-container {
