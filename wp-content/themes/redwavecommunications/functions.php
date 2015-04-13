@@ -518,7 +518,7 @@ function residential_systems()
     global $post;
 
     $args = array(
-        'post-type' => 'rw-system',
+        'post_type' => 'rw-system',
         'order' => 'ASC',
         'orderby' => 'date',
         'tax_query' => array(
@@ -526,6 +526,8 @@ function residential_systems()
                 'taxonomy' => 'link-type',
                 'field'    => 'slug',
                 'terms'    => 'residential',
+            )
+        )
     );
 
     $markup = array();
@@ -535,19 +537,12 @@ function residential_systems()
             $loop->the_post();
             $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full', false, '');
 
-            $the_markup = sprintf("<div class='system'>< class='image' style='background: url(%s) center no-repeat; background-size: cover;'>", $src[0]);
-            $the_markup = "<div class='infocontainer infolist'> <img id='tool-tip' src='img/tool-tip.png'> <p>";
+            $the_markup = sprintf("<div class='system'><div class='image' style='background: url(%s) center no-repeat; background-size: cover;'>", $src[0]);
+            $the_markup .= "<div class='infocontainer infolist'><div class='tool-tip'></div><p>";
             $the_markup .= types_render_field('system-description', array('output' => 'html'));
-            $the_markup .= "</p> <h5><strong>BRANDS</strong></h5> <ul class='bulletlist'> <li>";
+            $the_markup .= "</p><h5><strong>BRANDS</strong></h5><ul class='bulletlist'><li>";
             $the_markup .= types_render_field('system-list', array('output' => 'html', 'separator' => '<li></li>'));
-            $the_markup .= "
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>";
-
-
+            $the_markup .= "</li></ul></div></div></div>";
             $markup[] = $the_markup;
         }
     }
