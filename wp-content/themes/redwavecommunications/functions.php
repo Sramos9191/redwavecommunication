@@ -547,8 +547,7 @@ function residential_systems()
         }
     }
 
-    return sprintf("<div class='systems'>%s</div>",
-        implode('', $markup));
+    return sprintf("<div class='systems'>%s</div>", implode('', $markup));
 }
 
 ?>
