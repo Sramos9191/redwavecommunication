@@ -405,7 +405,27 @@ SERVICES STYLES
 /*====================================================================
 SYSTEMS STYLES
 =====================================================================*/
+[id^="accordion"] .systemsContainer {
+    margin-left: 35px !important;
+}
 
+[id^="accordion"] .systems {
+    margin-left: 35px !important;
+    margin-top: 15px !important;
+    width: 1000px;
+    overflow: hidden;
+}
+
+[id^="accordion"] .moveRight {
+    position: absolute;
+    left: 678px
+}
+
+[id^="accordion"] .moveUp {
+    position: absolute;
+    left: 678px;
+    top: 213px;
+}
 
 .image {
     position: relative;

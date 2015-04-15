@@ -537,6 +537,7 @@ function residential_systems()
             $loop->the_post();
             $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full', false, '');
 
+
             $the_markup = sprintf("<div class='system'><div class='image' style='background: url(%s) center no-repeat; background-size: cover;'>", $src[0]);
             $the_markup .= "<div class='infocontainer infolist'><div class='tool-tip'></div><p>";
             $the_markup .= types_render_field('system-description', array('output' => 'html'));
@@ -550,5 +551,4 @@ function residential_systems()
     return sprintf("<div class='systems'>%s</div>",
         implode('', $markup));
 }
-
 ?>
