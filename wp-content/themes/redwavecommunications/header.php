@@ -2,6 +2,9 @@
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+
+
+
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
@@ -23,6 +26,9 @@
         });
         </script>
 
+        <!--[if IE6]>
+        <link rel="stylesheet" href="ie.css" type="text/css"/>
+        <![endif]-->
 	</head>
 	<body <?php body_class(); ?>>
 

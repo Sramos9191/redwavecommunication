@@ -512,6 +512,8 @@ function rw_homepage_business_links() {
     return new WP_Query( $args );
 }
 
+
+
 add_shortcode('residential_systems', 'residential_systems');
 function residential_systems()
 {
@@ -530,6 +532,7 @@ function residential_systems()
         )
     );
 
+
     $markup = array();
     $loop = new WP_Query($args);
     if ($loop->have_posts()) {
@@ -537,17 +540,25 @@ function residential_systems()
             $loop->the_post();
             $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full', false, '');
 
-            $the_markup = sprintf("<div class='system'><div class='image' style='background: url(%s) center no-repeat; background-size: cover;'>", $src[0]);
-            $the_markup .= "<div class='infocontainer infolist'><div class='tool-tip'></div><p>";
-            $the_markup .= types_render_field('system-description', array('output' => 'html'));
-            $the_markup .= "</p><h5><strong>BRANDS</strong></h5><ul class='bulletlist'><li>";
-            $the_markup .= types_render_field('system-list', array('output' => 'html', 'separator' => '<li></li>'));
-            $the_markup .= "</li></ul></div></div></div>";
+
+            $the_markup = sprintf("<div class='system'>
+                                        <div class='image' style='background: url(%s) center no-repeat; background-size: cover;'>", $src[0]);
+
+            $the_markup .= "<div class='resInfoContainer'>
+                                <img id='tool-tip' src='/wp-content/themes/redwavecommunications/img/tool-tip.png' />
+                                <div class='col-xs-14 resSysDesc'>";
+            $the_markup .=          types_render_field('system-description', array('output' => 'raw'));
+            $the_markup .= "    </div>
+                                <div class='col-xs-10 resInfoList'>
+                                    <h5><strong>BRANDS</strong></h5>
+                                    <ul class='bulletlist'><li>";
+            $the_markup .= types_render_field('system-list', array('output' => 'html', 'separator' => '</li><li>'));
+            $the_markup .= "</li></ul></div></div></div></div>";
             $markup[] = $the_markup;
         }
     }
 
-    return sprintf("<div class='systems'>%s</div>", implode('', $markup));
+    return sprintf("<div class='systems'>%s</div>",
+        implode('', $markup));
 }
-
 ?>

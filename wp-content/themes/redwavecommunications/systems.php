@@ -21,12 +21,19 @@
             </div><!-- close row -->
         </div><!-- close .pull-left col-md-12 -->
         <div class="col-md-13 all-systems">
-        <?php
+            <?php
             $args = array(
                 'post_type'        => 'rw-system',
                 'post_status'      => 'publish',
                 'order'            => 'ASC',
                 'orderby'          => 'title',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'link-type',
+                        'field'    => 'slug',
+                        'terms'    => 'business',
+                    )
+                )
             );
 
             $loop = new WP_Query($args);
@@ -38,7 +45,7 @@
             <div class="image" style="background:url('<?php echo $src[0]; ?>') center no-repeat; background-size: cover;">
 
                     <div class="infocontainer">
-                        <img id="tool-tip" src="<?php echo get_template_directory_uri() ?>/img/tool-tip.png" />
+                        <img id="tool-tip" src="/wp-content/themes/redwavecommunications/img/tool-tip.png" />
                         <div class="col-xs-14 sys-desc">
                             <p>
                                 <?php echo types_render_field('system-description',

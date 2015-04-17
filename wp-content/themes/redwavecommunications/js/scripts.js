@@ -12,6 +12,14 @@
 			$(this).find('.infocontainer').toggle();
 		});
 
+        $('.image').hover(function(){
+            $(this).find('.resInfoContainer').toggle();
+        });
+
+        $('.grid-system').click(function(){
+            $(this).find('.resInfoContainer').toggle();
+        });
+
 		$('.menuItem:not(".noSubmenu")').on('click', function () {
 			var $menuItem = $(this), isActive = $menuItem.hasClass('active');
 

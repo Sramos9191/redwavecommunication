@@ -1,3 +1,5 @@
+
+
 /*-------- accordion inner red square -------*/
 
 
@@ -59,6 +61,11 @@ BULLETS AND SUCH
   color: #c21a24;
 }
 
+.estimate a {
+    color: #fff;
+
+}
+
 /*--------- overall row padding --------------*/
 #accordionPro213 .accordionPad div {
   padding: 15px 0 0 0;
@@ -79,47 +86,61 @@ BULLETS AND SUCH
 }
 
 /*========================================================
-GET AND ESTIMATE BUTTON MODE
+INFO CONTAINERS FOR RESIDENTIAL SYSTEMS
 ========================================================*/
 
-#accordionPro175 div .estimate, #accordionPro176 div .estimate {
-  background: #a71f35;
-  color: #fff;
-  width: 200px;
-  margin-left: 40px;
-  padding: 8px 0;
-  text-align: center;
+#accordionPro214 .resInfoContainer {
+    display: none;
+    margin: 0 0 0 0;
+    padding: 10px 15px;
+    font: 0.85em Helvetica, Arial, sans-serif;
+    background-color: rgba(255,255,255, .90);
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    z-index: 1000;
+    width: 400px;
+    border: 2px solid #323232;
 }
 
-.estimate a {
-  color: #fff;
-
+#accordionPro214 .resInfoList {
+    margin: 0 0 0 0;
+    padding: 0 0 0 10px;
+    list-style: disc;
 }
 
-.content {
-  font: 1.2em Helvetica, Arial, sans-serif;
-  line-height: 120%;
-  margin: 0 20px 0 40px !important;
-  padding: 0 25px 0 0 !important;
+#accordionPro214 .resSysDesc {
+    margin: 0 0 0 0;
+    padding: 0 10px;
+    line-height: 150%;
 }
 
-#accordionPro175.basic .slide>h2, #accordionPro176.basic .slide>h2 {
-  background: #ccc;
-  color: #323232;
+#accordionPro214 .bulletlist {
+    margin: 0 0 0 20px;
+    padding: 0 0 0 0;
+    list-style: disc;
 }
 
-#accordionPro175.basic .selected>h2, #accordionPro176.basic .selected>h2  {
-  background: #c21a24;
-  color: #fff;
-}
-
-#accordionPro175.basic ul li, #accordionPro176.basic ul li {
-  margin: 2px 0 0 10px;
+#tool-tip {
+    /*background: url('/img/tool-tip.png');*/
+    opacity: .90;
+    position: absolute;
+    top: -34px;
+    left: 30%;
+    width: 34px !important;
+    height: 34px !important;
 }
 
 /*========================================================
 REVERSE ACCORDION CSS
 ========================================================*/
+
+.content {
+    font: 1.2em Helvetica, Arial, sans-serif;
+    line-height: 120%;
+    margin: 0 20px 0 40px !important;
+    padding: 0 25px 0 0 !important;
+}
 
 #accordionPro213 div .estimate, #accordionPro214 div .estimate {
   background: #c21a24;

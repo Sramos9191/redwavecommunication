@@ -413,7 +413,17 @@ SYSTEMS STYLES
     margin-left: 30px !important;
     margin-top: 15px !important;
     width: 1000px;
-    overflow: hidden;
+}
+
+[id^="accordion"] .moveRight {
+    position: absolute;
+    left: 678px
+}
+
+[id^="accordion"] .moveUp {
+    position: absolute;
+    left: 678px;
+    top: 213px;
 }
 
 .image {
@@ -493,10 +503,25 @@ SYSTEMS STYLES
 }
 
 #tool-tip {
+    /*background: url('/img/tool-tip.png');*/
     opacity: .90;
     position: absolute;
     top: -35px;
     left: 30%;
+    width: 34px;
+    height: 34px;
+}
+
+.tool-tip {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-image: url('/wp-content/themes/redwavecommunications/img/tool-tip.png');
+    opacity: .90;
+    position: relative;
+    top: -39px;
+    left: 25%;
+    height: 34px;
+    width: 34px;
 }
 
 /* =======================================================================
@@ -746,8 +771,4 @@ MEDIA QUERIES
 
 }
 
-.tool-tip {
-    background-image: url(/wp-content/themes/redwavecommunications/img/tool-tip.png);
-    height: 25px;
-    width: 25px;
-}
+
