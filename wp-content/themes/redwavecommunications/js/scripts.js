@@ -31,6 +31,17 @@
 			if (!isActive) $menuItem.addClass('active');
 		});
 
+        $(window).on('resize', function (evt) {
+            var $window = $(this);
+            var width = $window.width();
+            var height = $window.height();
+            var $button = $('#getestimate');
+            var buttonWidth = $button.outerWidth();
+
+            $('#getestimate').css('left', width / 2 - buttonWidth / 2);
+
+        }).resize();
+
 		//$().on('click', function () {
 		//	var $navItem = $(this), isActive = $navItem.hasClass('active');
         //

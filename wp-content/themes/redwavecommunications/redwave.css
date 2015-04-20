@@ -220,7 +220,7 @@ ABOUT US STYLES
     background: #a71f35 url("img/about-us.png") no-repeat left;
     background-size: 100% 100%;
     padding: 10px 20px;
-    height: 319px;
+    min-height: 319px;
 }
 .about-top p {
     font: 1.1em Helvetica, Arial, sans-serif;
@@ -328,7 +328,6 @@ RESIDENTIAL AND BUSINESS STYLES
     opacity: .90;
     z-index: 3;
     top: 84%;
-    left: 45%;
     height: 40px;
     width: 150px;
     text-align: center;
@@ -664,7 +663,6 @@ MEDIA QUERIES
         position: absolute;
         background-color: #883333;
         top: 57%;
-        left: 40%;
         height: 50px;
         width: 150px;
         text-align: center;
@@ -676,6 +674,12 @@ MEDIA QUERIES
     #tagline {
         position: relative;
         top: 0px;
+    }
+    .about-top {
+        background: #a71f35 url("img/about-min.png") repeat-x;
+        background-size: 100% 100%;
+        padding: 10px 20px;
+        min-height: 319px;
     }
 
 }
@@ -719,8 +723,7 @@ MEDIA QUERIES
         padding: 15px 0;
         position: absolute;
         background-color: #883333;
-        top: 62%;
-        left: 31%;
+        top: 61%;
         height: 50px;
         width: 150px;
         text-align: center;
@@ -768,7 +771,22 @@ MEDIA QUERIES
     .infolist {
         padding: 0 5px 0 0;
     }
+/*==================================================
+ABOUT US MEDIA QUERY
+===================================================*/
+    .about-top {
+        background: #a71f35 url("img/about-min.png") repeat-x;
+        background-size: 100% 100%;
+        padding: 10px 20px;
+        height: auto;
+    }
+    .about-top p {
+        font: 1.1em Helvetica, Arial, sans-serif;
+        color: #fafafa;
+        padding: 10px 5px;
+        margin: 0 0 0 15px;
+        line-height: 250%
+    }
+
 
 }
-
-
