@@ -20,7 +20,7 @@
 
             </div><!-- close row -->
         </div><!-- close .pull-left col-md-12 -->
-        <div class="col-md-13 all-systems">
+        <div class="col-md-15 all-systems">
             <?php
             $args = array(
                 'post_type'        => 'rw-system',
