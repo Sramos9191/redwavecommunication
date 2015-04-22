@@ -522,7 +522,7 @@ function residential_systems()
     $args = array(
         'post_type' => 'rw-system',
         'order' => 'ASC',
-        'orderby' => 'date',
+        'orderby' => 'title',
         'tax_query' => array(
             array(
                 'taxonomy' => 'link-type',

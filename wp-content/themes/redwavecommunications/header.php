@@ -65,8 +65,8 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
 						</a>
 					</div> <!-- logo -->
-					<div class="col-md-15 col-xs-24">
-						<span id="tagline"><?php bloginfo('description'); ?></span><br />
+					<div class="col-md-15 col-xs-24 tagline">
+						<span><?php bloginfo('description'); ?></span><br />
 					</div><!-- tagline -->
 
 				</div><!-- container fluid -->
