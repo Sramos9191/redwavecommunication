@@ -221,6 +221,7 @@ ul {
 .menuItem {
   cursor: pointer;
   margin-bottom: 10px;
+    margin-left: -10px;
 }
 
 .menuItem::before {
@@ -235,20 +236,29 @@ ul {
   display: inline-block;
   margin-right: 5px;
 }
+/* this is the fix to the audios off alignment*/
+.submenu.audio li::before {
+   content: '';
+    display: inline-block;
+    margin-left: -.3em;
+}
+
 
 .submenu li::before {
   content: '-';
   display: inline-block;
   margin-right: 5px;
+  margin-left: -.5em;
 }
 
 .menuItem.noSubmenu {
   cursor: auto;
+    margin-left: .9em!important;
 }
 
 .menuItem.noSubmenu::before {
   content: "";
-  margin-left: 10px;
+  margin-left: -.3em;
 }
 
 .menuItem ul li {
