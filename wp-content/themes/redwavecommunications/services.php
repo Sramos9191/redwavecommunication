@@ -3,7 +3,7 @@
 <main role="main">
 
     <div class="row">
-        <h3 id="service-img"><img src="http://localhost:8080/wp-content/uploads/2015/02/services.png" alt="redwave services"></h3>
+        <h3 id="service-img"><img src="/wp-content/uploads/2015/02/services.png" alt="redwave services"></h3>
 
     <!--==================== services begins ==========================-->
 

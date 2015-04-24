@@ -12,6 +12,14 @@
 			$(this).find('.infocontainer').toggle();
 		});
 
+        $('.image').hover(function(){
+            $(this).find('.resInfoContainer').toggle();
+        });
+
+        $('.grid-system').click(function(){
+            $(this).find('.resInfoContainer').toggle();
+        });
+
 		$('.menuItem:not(".noSubmenu")').on('click', function () {
 			var $menuItem = $(this), isActive = $menuItem.hasClass('active');
 
@@ -22,6 +30,17 @@
 			//add the active class to the thing I just clicked on
 			if (!isActive) $menuItem.addClass('active');
 		});
+
+        $(window).on('resize', function (evt) {
+            var $window = $(this);
+            var width = $window.width();
+            var height = $window.height();
+            var $button = $('#getestimate');
+            var buttonWidth = $button.outerWidth();
+
+            $('#getestimate').css('left', width / 2 - buttonWidth / 2);
+
+        }).resize();
 
 		//$().on('click', function () {
 		//	var $navItem = $(this), isActive = $navItem.hasClass('active');

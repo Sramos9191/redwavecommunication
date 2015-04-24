@@ -2,6 +2,9 @@
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+
+
+
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
@@ -23,6 +26,9 @@
         });
         </script>
 
+        <!--[if IE6]>
+        <link rel="stylesheet" href="ie.css" type="text/css"/>
+        <![endif]-->
 	</head>
 	<body <?php body_class(); ?>>
 
@@ -59,8 +65,8 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
 						</a>
 					</div> <!-- logo -->
-					<div class="col-md-15 col-xs-24">
-						<span id="tagline"><?php bloginfo('description'); ?></span><br />
+					<div class="col-md-15 col-xs-24 tagline">
+						<span><?php bloginfo('description'); ?></span><br />
 					</div><!-- tagline -->
 
 				</div><!-- container fluid -->

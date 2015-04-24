@@ -1,7 +1,7 @@
 <?php /* Template Name: Contact Us Template */ get_header(); ?>
 
 <main id="contact" role="main">
-            <h1><img src="http://localhost:8080/wp-content/uploads/2015/02/contact.png" alt="contact us"></h1>
+            <h1><img src="/wp-content/uploads/2015/02/contact.png" alt="contact us"></h1>
 
 <!--==================== contact start =======================-->
         <div class="contact-container">

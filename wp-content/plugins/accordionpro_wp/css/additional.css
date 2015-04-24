@@ -1,6 +1,7 @@
-/*======================
-accordion square
-======================*/
+
+
+/*-------- accordion inner red square -------*/
+
 
 img.square {
   width: 20px !important;
@@ -11,8 +12,8 @@ img.square {
 
 
 
-/* =======================================================
-residential and business | system and service list styling
+/*========================================================
+RESIDENTIAL AND BUSINESS | SYSTEM AND SERVICE LIST STYLING
 ========================================================*/
 #accordionPro213.basic ul li li, #accordionPro214.basic ul li li {
     font: 1em Helvetica, Arial, sans-serif;
@@ -43,10 +44,13 @@ residential and business | system and service list styling
 }
 
 
-/*============= bullets and such ==============*/
+/*========================================================
+BULLETS AND SUCH
+========================================================*/
+
 
 .noBullets {
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 .bullets {
@@ -57,49 +61,91 @@ residential and business | system and service list styling
   color: #c21a24;
 }
 
-/*============= get an estimate ===============*/
-
-#accordionPro175 div .estimate, #accordionPro176 div .estimate {
-  background: #a71f35;
-  color: #fff;
-  width: 200px;
-  margin-left: 40px;
-  padding: 8px 0;
-  text-align: center;
-}
-
 .estimate a {
-  color: #fff;
+    color: #fff;
 
 }
+
+/*--------- overall row padding --------------*/
+#accordionPro213 .accordionPad div {
+  padding: 15px 0 0 0;
+}
+
+#accordionPro214 .accordionPad div {
+  padding: 15px 0 0 0;
+}
+
+/*------padding for the ul tags -------*/
+
+#accordionPro213 .row ul {
+  padding: 5px 0 0 0;
+}
+
+#accordionPro214 .row ul {
+  padding: 5px 0 0 0;
+}
+
+/*========================================================
+INFO CONTAINERS FOR RESIDENTIAL SYSTEMS
+========================================================*/
+
+#accordionPro214 .resInfoContainer {
+    display: none;
+    margin: 0 0 0 0;
+    padding: 10px 15px;
+    font: 0.85em Helvetica, Arial, sans-serif;
+    background-color: rgba(255,255,255, .90);
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    z-index: 1000;
+    width: 400px;
+    border: 2px solid #323232;
+}
+
+#accordionPro214 .resInfoList {
+    margin: 0 0 0 0;
+    padding: 0 0 0 10px;
+    list-style: disc;
+}
+
+#accordionPro214 .resSysDesc {
+    margin: 0 0 0 0;
+    padding: 0 10px;
+    line-height: 150%;
+}
+
+#accordionPro214 .bulletlist {
+    margin: 0 0 0 20px;
+    padding: 0 0 0 0;
+    list-style: disc;
+}
+
+#tool-tip {
+    /*background: url('/img/tool-tip.png');*/
+    opacity: .90;
+    position: absolute;
+    top: -34px;
+    left: 30%;
+    width: 34px !important;
+    height: 34px !important;
+}
+
+/*========================================================
+HORIZONTAL ACCORDION CSS
+========================================================*/
 
 .content {
-  font: 1.2em Helvetica, Arial, sans-serif;
-  line-height: 120%;
-  margin: 0 20px 0 40px !important;
-  padding: 0 25px 0 0 !important;
+    font: 1.2em Helvetica, Arial, sans-serif;
+    line-height: 120%;
+    margin: 0 20px 0 40px !important;
+    padding: 0 25px 0 0 !important;
 }
-
-#accordionPro175.basic .slide>h2, #accordionPro176.basic .slide>h2 {
-  background: #ccc;
-  color: #323232;
-}
-
-#accordionPro175.basic .selected>h2, #accordionPro176.basic .selected>h2  {
-  background: #c21a24;
-  color: #fff;
-}
-
-#accordionPro175.basic ul li, #accordionPro176.basic ul li {
-  margin: 2px 0 0 10px;
-}
-
-/* ================= reverse accordion css ======================*/
 
 #accordionPro213 div .estimate, #accordionPro214 div .estimate {
   background: #c21a24;
   color: #fff;
-  width: 196px;
+  width: 200px;
   margin-left: 40px;
   padding: 8px 0;
   text-align: center;
@@ -145,8 +191,57 @@ residential and business | system and service list styling
     padding-bottom: 10px;
 }
 
+/* ======================================================
+VERTICAL ACCORDION
+=======================================================*/
+.content {
+    font: 1.2em Helvetica, Arial, sans-serif;
+    line-height: 120%;
+    margin: 0 20px 0 40px !important;
+    padding: 0 25px 0 0 !important;
+}
 
-/* ============ accordion inside of an accordion ================== */
+#accordionPro175 div .estimate, #accordionPro176 div .estimate {
+    background: #c21a24;
+    color: #fff;
+    width: 200px;
+    margin-left: 40px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+#accordionPro175 div .estimate:hover, #accordionPro176 div .estimate:hover {
+    background: #a71f35;
+}
+
+
+
+#accordionPro175.basic .slide>h2, #accordionPro176.basic .slide>h2 {
+    background: #ccc;
+    color: #323232;
+}
+
+#accordionPro175.basic .selected>h2, #accordionPro176.basic .selected>h2  {
+    background: #c21a24;
+    color: #fff;
+}
+
+
+
+#accordionPro175.rtl .slide>div, #accordionPro176.rtl .slide>div {
+    direction: ltr;
+    text-align: left;
+}
+
+
+/*========================================================
+ACCORDION INSIDE OF AN ACCORDION
+========================================================*/
+
+li .noSubmenu {
+  margin-left: 20px;
+  padding-left: 20px;
+}
 
 ul {
   list-style-type: none;
@@ -168,6 +263,7 @@ ul {
 .menuItem {
   cursor: pointer;
   margin-bottom: 10px;
+    margin-left: -10px;
 }
 
 .menuItem::before {
@@ -182,15 +278,29 @@ ul {
   display: inline-block;
   margin-right: 5px;
 }
+/* this is the fix to the audios off alignment*/
+.submenu.audio li::before {
+   content: '';
+    display: inline-block;
+    margin-left: -.3em;
+}
+
 
 .submenu li::before {
   content: '-';
   display: inline-block;
   margin-right: 5px;
+  margin-left: -.5em;
 }
 
 .menuItem.noSubmenu {
   cursor: auto;
+    margin-left: .9em!important;
+}
+
+.menuItem.noSubmenu::before {
+  content: "";
+  margin-left: -.3em;
 }
 
 .menuItem ul li {
