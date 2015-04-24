@@ -132,7 +132,7 @@ INFO CONTAINERS FOR RESIDENTIAL SYSTEMS
 }
 
 /*========================================================
-REVERSE ACCORDION CSS
+HORIZONTAL ACCORDION CSS
 ========================================================*/
 
 .content {
@@ -189,6 +189,48 @@ REVERSE ACCORDION CSS
 #accordionPro214.horizontal .slide>h2 {
     padding-right: 20px;
     padding-bottom: 10px;
+}
+
+/* ======================================================
+VERTICAL ACCORDION
+=======================================================*/
+.content {
+    font: 1.2em Helvetica, Arial, sans-serif;
+    line-height: 120%;
+    margin: 0 20px 0 40px !important;
+    padding: 0 25px 0 0 !important;
+}
+
+#accordionPro175 div .estimate, #accordionPro176 div .estimate {
+    background: #c21a24;
+    color: #fff;
+    width: 200px;
+    margin-left: 40px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+#accordionPro175 div .estimate:hover, #accordionPro176 div .estimate:hover {
+    background: #a71f35;
+}
+
+
+
+#accordionPro175.basic .slide>h2, #accordionPro176.basic .slide>h2 {
+    background: #ccc;
+    color: #323232;
+}
+
+#accordionPro175.basic .selected>h2, #accordionPro176.basic .selected>h2  {
+    background: #c21a24;
+    color: #fff;
+}
+
+
+
+#accordionPro175.rtl .slide>div, #accordionPro176.rtl .slide>div {
+    direction: ltr;
+    text-align: left;
 }
 
 

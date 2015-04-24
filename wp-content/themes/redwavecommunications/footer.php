@@ -3,7 +3,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<footer id="footer">
-			<div class="col-md-4">
+			<div class="col-md-5">
 				<span>&copy;2015 REDWAVE COMMUNICATIONS</span>
 			</div>
 			<div class="col-md-12 footerItems">
@@ -18,7 +18,7 @@
 					<li><img id="8" src="/wp-content/uploads/2015/02/rcdd.png"></li>
 				</ul>
 				</div>
-			<div class="col-md-10"></div>
+			<div class="col-md-7"></div>
 		</footer>
 	</div>
 </div>

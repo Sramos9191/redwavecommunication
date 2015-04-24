@@ -190,27 +190,22 @@ footer Stuffs
 
 footer {
     margin: 30px 0 0 30px;
-    position: relative;
-    bottom: 0;
     background-color: #fff;
 }
 
-#footer span {
-    position: relative;
-    top: 25px;
+footer span {
+    display: inline-block;
+    margin-top: 30px;
     font: 0.875em Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 
 }
 
-#footer {
-    position: relative;
-    bottom: 0;
-}
-
 #footer img {
     padding: 10px 0 10px 0;
 }
+
+
 
 /* ==================================================================
 ABOUT US STYLES
@@ -675,9 +670,6 @@ MEDIA QUERIES
         margin: 0 0 30px 0;
         text-align: center;
     }
-    .logo-img {
-        margin: 0 43%;
-    }
 
     .about-top {
         background: #a71f35 url("img/about-min.png") repeat-x;
@@ -737,17 +729,23 @@ MAIN MEDIA QUERY
 
 
     #footer {
-        height: 100px;
         width: 100%;
         font-weight: 500;
-        overflow: hidden;
+    }
+
+    #footer img {
+        width: 70%;
+        height: 70%;
+        margin-right: 2px;
+        margin-left: 0;
     }
 
     #footer span {
-        position: relative;
-        top: 0;
-        margin: 30px 0 0 0;
-        padding: 0 0 0 0;
+        margin: 20px 0 0 0;
+    }
+
+    .footerItems ul li {
+        margin: 0 0 0 0;
     }
 
     .navbar-form {
@@ -794,5 +792,38 @@ ABOUT US MEDIA QUERY
         line-height: 250%
     }
 
+
+}
+
+
+/*===================================================
+VERY SPECIFIC MEDIA QUERY FOR HEADER
+====================================================*/
+
+@media only screen and (min-width: 767px) and (max-width: 1025px)  {
+    #navbar a {
+        padding: 14px 16px;
+    }
+
+    .logo {
+        margin: 100px 0 10px 20px;
+    }
+    .logo-img {
+        margin: 0 100%;
+    }
+    .tagline {
+        margin: 10px 0 20px 0;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px)  {
+
+    .logo {
+        margin: 70px 0 20px 20px;
+    }
+    .logo-img {
+        margin: 0 0;
+    }
 
 }
