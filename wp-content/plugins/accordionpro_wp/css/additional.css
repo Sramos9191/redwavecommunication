@@ -194,13 +194,28 @@ HORIZONTAL ACCORDION CSS
 /* ======================================================
 VERTICAL ACCORDION
 =======================================================*/
+<<<<<<< HEAD
 .content {
+=======
+#accordionPro175 .content, #accordionPro176 .content {
+>>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
     font: 1.2em Helvetica, Arial, sans-serif;
     line-height: 120%;
     margin: 0 20px 0 40px !important;
     padding: 0 25px 0 0 !important;
 }
 
+<<<<<<< HEAD
+=======
+#accordionPro175 div, #accordionPro176 div {
+     padding-bottom: 25px;
+ }
+
+#accordionPro175 div, #accordionPro176 div {
+    padding-bottom: 25px;
+}
+
+>>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
 #accordionPro175 div .estimate, #accordionPro176 div .estimate {
     background: #c21a24;
     color: #fff;
@@ -234,6 +249,89 @@ VERTICAL ACCORDION
 }
 
 
+<<<<<<< HEAD
+=======
+/*=======================================================
+ACCORDION INSIDE OF AN ACCORDION
+=======================================================*/
+
+/*========================================================
+ACCORDION INSIDE OF AN ACCORDION
+========================================================*/
+
+li #accordionPro176.noSubmenu {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul #accordionPro176 {
+    list-style-type: none;
+}
+
+#accordionPro176.submenu {
+    font: 1em Helvetica, Arial, sans-serif;
+    display: none;
+    margin-left: 26px;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#accordionPro176.menuItem.active .submenu {
+    display: block;
+}
+
+#accordionPro176.menuItem {
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+#accordionPro176.menuItem::before {
+    content: "+";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#accordionPro176.menuItem.active::before {
+    content: "-";
+    color: #c21a24;
+    display: inline-block;
+    margin-right: 5px;
+}
+/* this is the fix to the audios off alignment*/
+#accordionPro176.submenu.audio li::before {
+    content: '';
+    display: inline-block;
+    margin-left: -.3em;
+}
+
+
+#accordionPro176.submenu li::before {
+    content: '-';
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: -.5em;
+}
+
+#accordionPro176.menuItem.noSubmenu {
+    cursor: auto;
+    margin-left: .9em!important;
+}
+
+#accordionPro176.menuItem.noSubmenu::before {
+    content: "";
+    margin-left: -.3em;
+}
+
+#accordionPro176.menuItem ul li {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+>>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
 /*========================================================
 ACCORDION INSIDE OF AN ACCORDION
 ========================================================*/

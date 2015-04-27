@@ -226,7 +226,11 @@ ABOUT US STYLES
     color: #fafafa;
     padding: 20px 10px;
     margin: 0 0 0 15px;
+<<<<<<< HEAD
     line-height: 280%
+=======
+    line-height: 280%;
+>>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
 }
 
 .about-bottom {
@@ -289,7 +293,12 @@ RESIDENTIAL AND BUSINESS STYLES
     font: 2.25em Helvetica, Arial, sans-serif;
     font-weight: lighter;
     color: #a71f35;
+<<<<<<< HEAD
     line-height: 104%;
+=======
+    line-height: 1.2em;
+    margin-bottom: 5px;
+>>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
 }
 
 #left li {
@@ -309,8 +318,22 @@ RESIDENTIAL AND BUSINESS STYLES
 }
 
 #right ul li {
+<<<<<<< HEAD
     font: 16px Helvetica, Arial, sans-serif;
     padding: 5px 0 0 0;
+=======
+    font: 1.1em Helvetica, Arial, sans-serif;
+    padding: 5px 0 0 0;
+    line-height: 1.2em;
+}
+
+#left a, #right a {
+    color: #000;
+}
+
+#left a:hover, #left a:focus, #right a:hover, #right a:focus {
+    color: #c21a24;
+>>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
 }
 
 
@@ -527,10 +550,17 @@ SERVICE AND SYSTEMS STYLES SPECS
 =========================================================================*/
 
 .servsysSubheads {
+<<<<<<< HEAD
     font: 1.5em Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     color: #c21a24;
+=======
+    font: 1.3em Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+>>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
 }
 
 .servsysBullets {
