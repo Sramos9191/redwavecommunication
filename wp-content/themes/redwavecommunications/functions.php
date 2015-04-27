@@ -549,7 +549,7 @@ function residential_systems()
                                 <div class='col-xs-14 resSysDesc'>";
             $the_markup .=          types_render_field('rw-residential-desc', array('output' => 'raw'));
             $the_markup .= "    </div></div></div></div>";
-            
+
             $markup[] = $the_markup;
         }
     }
