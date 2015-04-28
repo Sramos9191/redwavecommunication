@@ -80,7 +80,7 @@
 
 /**************************************** Options */
 /* responsive */
-.accordionPro.scaleImages .slide > div img { width: 100%; height: 100% }
+.accordionPro.scaleImages .slide > div img { width: 100%; /*height: 100%;*/ }
 
 /* vertical fitToContent */
 .accordionPro.vertical.fitToContent .slide > div { overflow: visible; height: auto }

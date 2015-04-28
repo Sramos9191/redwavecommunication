@@ -15,14 +15,14 @@ img.square {
 /*========================================================
 RESIDENTIAL AND BUSINESS | SYSTEM AND SERVICE LIST STYLING
 ========================================================*/
-#accordionPro213.basic ul li li, #accordionPro214.basic ul li li {
+#accordionPro213.basic ul li li, #accordionPro214.basic ul li li, #accordionPro175.basic ul li li, #accordionPro176.basic ul li li {
     font: 1em Helvetica, Arial, sans-serif;
     margin: 0 0 6px 26px;
     font-weight: bold;
     color: #323232;
 }
 
-#accordionPro213.noBullets ul li, #accordionPro214.noBullets ul li {
+#accordionPro213.noBullets ul li, #accordionPro214.noBullets ul li, #accordionPro175.noBullets ul li, #accordionPro176.noBullets ul li {
   font: 1em Helvetica, Arial, sans-serif;
   margin: 0 0 6px 15px;
   font-weight: bold;
@@ -30,7 +30,7 @@ RESIDENTIAL AND BUSINESS | SYSTEM AND SERVICE LIST STYLING
 }
 /* this makes the bullet class have a margin to line it up with service, systems, and brands on residential accordion*/
 /*also gives it a bold and dark grey style*/
-#accordionPro213 .bullets, #accordionPro214 .bullets {
+#accordionPro213 .bullets, #accordionPro214 .bullets, #accordionPro176 .bullets, #accordionPro175 .bullets {
   margin: 0 0 0 20px;
   padding: 0 0 0 0;
   font-weight: bold;
@@ -38,7 +38,7 @@ RESIDENTIAL AND BUSINESS | SYSTEM AND SERVICE LIST STYLING
 }
 
 /* this makes the collapsible menu in the accordions font bold and dark grey */
-#accordionPro213 .collapsibleMenu, #accordionPro214 .collapsibleMenu {
+#accordionPro213 .collapsibleMenu, #accordionPro214 .collapsibleMenu, #accordionPro175 .collapsibleMenu, #accordionPro176 .collapsibleMenu {
   font-weight: bold;
   color: #323232;
 }
@@ -54,7 +54,7 @@ BULLETS AND SUCH
 }
 
 .bullets {
-  list-style-type: disc;
+  list-style-type: disc!important;
 }
 
 .active {
@@ -118,7 +118,7 @@ INFO CONTAINERS FOR RESIDENTIAL SYSTEMS
 #accordionPro214 .bulletlist {
     margin: 0 0 0 20px;
     padding: 0 0 0 0;
-    list-style: disc;
+    list-style-type: disc;
 }
 
 #tool-tip {
@@ -163,7 +163,9 @@ HORIZONTAL ACCORDION CSS
 }
 
 #accordionPro213.basic .slide>h2:hover, #accordionPro214.basic .slide>h2:hover,
-#accordionPro213.basic .slide>h2:focus, #accordionPro214.basic .slide>h2:focus{
+#accordionPro175.basic .slide>h2:hover, #accordionPro176.basic .slide>h2:hover,
+#accordionPro213.basic .slide>h2:focus, #accordionPro214.basic .slide>h2:focus
+#accordionPro175.basic .slide>h2:focus, #accordionPro176.basic .slide>h2:focus{
     background: #a71f35;
     color: #fafafa;
 }
@@ -182,6 +184,7 @@ HORIZONTAL ACCORDION CSS
 
 #accordionPro213.horizontal .slide>h2 span,
 #accordionPro214.horizontal .slide>h2 span {
+  -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
   padding-right: 2%;
 }
@@ -205,6 +208,10 @@ VERTICAL ACCORDION
     line-height: 120%;
     margin: 0 20px 0 40px !important;
     padding: 0 25px 0 0 !important;
+}
+
+#accordionPro175 .vertical-align, #accordionPro176 .vertical-align {
+    margin-left: 40px;
 }
 
 #accordionPro175 div, #accordionPro176 div {
@@ -256,14 +263,15 @@ ACCORDION INSIDE OF AN ACCORDION
 ACCORDION INSIDE OF AN ACCORDION
 ========================================================*/
 
-li #accordionPro176.noSubmenu {
+#accordionPro176.noSubmenu li {
     margin-left: 20px;
     padding-left: 20px;
 }
 
-ul #accordionPro176 {
+#accordionPro176 ul {
     list-style-type: none;
 }
+
 
 #accordionPro176.submenu {
     font: 1em Helvetica, Arial, sans-serif;
