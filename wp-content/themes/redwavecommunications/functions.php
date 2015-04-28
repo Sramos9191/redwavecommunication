@@ -546,16 +546,9 @@ function residential_systems()
 
             $the_markup .= "<div class='resInfoContainer'>
                                 <img id='tool-tip' src='/wp-content/themes/redwavecommunications/img/tool-tip.png' />
-<<<<<<< HEAD:wp-content/themes/redwavecommunications/functions.php
-                                <div class='col-xs-14 resSysDesc'>";
-            $the_markup .=          types_render_field('rw-residential-desc', array('output' => 'raw'));
-            $the_markup .= "    </div></div></div></div>";
-
-=======
                                 <div class='col-xs-24 resSysDesc'>";
             $the_markup .=          types_render_field('rw-residential-desc', array('output' => 'raw'));
             $the_markup .= "    </div></div></div></div>";
->>>>>>> 22f2b959381964853771b9f3631a653eff10b14a:wp-content/themes/redwavecommunications/functions.php
             $markup[] = $the_markup;
         }
     }

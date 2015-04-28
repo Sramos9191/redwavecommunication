@@ -200,19 +200,13 @@ HORIZONTAL ACCORDION CSS
 /* ======================================================
 VERTICAL ACCORDION
 =======================================================*/
-<<<<<<< HEAD
-.content {
-=======
 #accordionPro175 .content, #accordionPro176 .content {
->>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
     font: 1.2em Helvetica, Arial, sans-serif;
     line-height: 120%;
     margin: 0 20px 0 40px !important;
     padding: 0 25px 0 0 !important;
 }
 
-<<<<<<< HEAD
-=======
 #accordionPro175 div, #accordionPro176 div {
      padding-bottom: 25px;
  }
@@ -221,7 +215,6 @@ VERTICAL ACCORDION
     padding-bottom: 25px;
 }
 
->>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
 #accordionPro175 div .estimate, #accordionPro176 div .estimate {
     background: #c21a24;
     color: #fff;
@@ -255,8 +248,6 @@ VERTICAL ACCORDION
 }
 
 
-<<<<<<< HEAD
-=======
 /*=======================================================
 ACCORDION INSIDE OF AN ACCORDION
 =======================================================*/
@@ -337,7 +328,6 @@ ul #accordionPro176 {
 }
 
 
->>>>>>> 22f2b959381964853771b9f3631a653eff10b14a
 /*========================================================
 ACCORDION INSIDE OF AN ACCORDION
 ========================================================*/
