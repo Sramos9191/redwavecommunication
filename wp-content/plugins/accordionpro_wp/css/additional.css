@@ -162,6 +162,12 @@ HORIZONTAL ACCORDION CSS
   color: #323232;
 }
 
+#accordionPro213.basic .slide>h2:hover, #accordionPro214.basic .slide>h2:hover,
+#accordionPro213.basic .slide>h2:focus, #accordionPro214.basic .slide>h2:focus{
+    background: #a71f35;
+    color: #fafafa;
+}
+
 #accordionPro213.basic .selected>h2, #accordionPro214.basic .selected>h2  {
   background: #c21a24;
   color: #fff;
