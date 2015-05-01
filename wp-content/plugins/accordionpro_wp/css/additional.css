@@ -89,7 +89,7 @@ BULLETS AND SUCH
 INFO CONTAINERS FOR RESIDENTIAL SYSTEMS
 ========================================================*/
 
-#accordionPro214 .resInfoContainer {
+#accordionPro214 .resInfoContainer, #accordionPro175 .resInfoContainer {
     display: none;
     margin: 0 0 0 0;
     padding: 10px 15px;
@@ -103,19 +103,19 @@ INFO CONTAINERS FOR RESIDENTIAL SYSTEMS
     border: 2px solid #323232;
 }
 
-#accordionPro214 .resInfoList {
+#accordionPro214 .resInfoList, #accordionPro175 .resInfoList {
     margin: 0 0 0 0;
     padding: 0 0 0 10px;
     list-style: disc;
 }
 
-#accordionPro214 .resSysDesc {
+#accordionPro214 .resSysDesc, #accordionPro175 .resSysDesc {
     margin: 0 0 0 0;
     padding: 0 10px;
     line-height: 150%;
 }
 
-#accordionPro214 .bulletlist {
+#accordionPro214 .bulletlist, #accordionPro175 .bulletlist {
     margin: 0 0 0 20px;
     padding: 0 0 0 0;
     list-style-type: disc;
@@ -214,9 +214,6 @@ VERTICAL ACCORDION
     margin-left: 40px;
 }
 
-#accordionPro175 div, #accordionPro176 div {
-     padding-bottom: 25px;
- }
 
 #accordionPro175 div, #accordionPro176 div {
     padding-bottom: 25px;
