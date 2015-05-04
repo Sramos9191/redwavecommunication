@@ -89,12 +89,9 @@ BULLETS AND SUCH
 INFO CONTAINERS FOR RESIDENTIAL SYSTEMS
 ========================================================*/
 
-<<<<<<< HEAD
+
 #accordionPro214 .resInfoContainer,
 #accordionPro175 .resInfoContainer {
-=======
-#accordionPro214 .resInfoContainer, #accordionPro175 .resInfoContainer {
->>>>>>> 1276638d733691cb3bc4b7d62a42ca47fe721106
     display: none;
     margin: 0 0 0 0;
     padding: 10px 15px;
@@ -108,34 +105,22 @@ INFO CONTAINERS FOR RESIDENTIAL SYSTEMS
     border: 2px solid #323232;
 }
 
-<<<<<<< HEAD
 #accordionPro214 .resInfoList,
 #accordionPro175 .resInfoList {
-=======
-#accordionPro214 .resInfoList, #accordionPro175 .resInfoList {
->>>>>>> 1276638d733691cb3bc4b7d62a42ca47fe721106
     margin: 0 0 0 0;
     padding: 0 0 0 10px;
     list-style: disc;
 }
 
-<<<<<<< HEAD
 #accordionPro214 .resSysDesc,
 #accordionPro175 .resSysDesc{
-=======
-#accordionPro214 .resSysDesc, #accordionPro175 .resSysDesc {
->>>>>>> 1276638d733691cb3bc4b7d62a42ca47fe721106
     margin: 0 0 0 0;
     padding: 0 10px;
     line-height: 150%;
 }
 
-<<<<<<< HEAD
 #accordionPro214 .bulletlist,
 #accordionPro175 .bulletlist{
-=======
-#accordionPro214 .bulletlist, #accordionPro175 .bulletlist {
->>>>>>> 1276638d733691cb3bc4b7d62a42ca47fe721106
     margin: 0 0 0 20px;
     padding: 0 0 0 0;
     list-style-type: disc;
