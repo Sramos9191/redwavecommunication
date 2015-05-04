@@ -50,6 +50,8 @@ body {
 }
 img {
 	max-width:100%;
+    -webkit-max-width: 25%;
+    -webkit-height: auto;
 	vertical-align:bottom;
 }
 a {

@@ -6,10 +6,10 @@ p {
     font: 1.2em Helvetica, Arial, sans-serif !important;
 }
 
-.contactPad {
-    padding: 5px 0 15px 15px !important;
-}
-
 .servsysBullets {
     padding: 3px 0 0 15px !important;
+}
+
+.logo-img {
+    margin-top: 100px;
 }

@@ -168,16 +168,15 @@ logo container
 =========================================================*/
 
 .logo {
-    margin: 70px 0 20px 20px;
-    width: auto;
+    padding: 85px 0 0 0;
     height: auto;
+    width: auto;
 }
 
 .tagline {
     color: #5b5b5b;
     font: italic 1.6em "Times New Roman";
-    margin: 95px 0 0 0;
-    padding-left: 20px;
+    padding: 105px 0 0 0;
 }
 
 .header {
@@ -671,15 +670,21 @@ MEDIA QUERIES
         padding: 15px 0;
         position: absolute;
         background-color: #883333;
-        top: 57%;
+        top: 59%;
         height: 50px;
         width: 150px;
         text-align: center;
     }
+
+    .logo {
+        margin-top: 50px;
+    }
+
     .tagline {
-        margin: 0 0 30px 0;
+        padding: 30px 0 0 0;
         text-align: center;
     }
+
 
     .about-top {
         background: #a71f35 url("img/about-min.png") repeat-x;
@@ -731,7 +736,7 @@ MAIN MEDIA QUERY
         padding: 15px 0;
         position: absolute;
         background-color: #883333;
-        top: 61%;
+        top: 63%;
         height: 50px;
         width: 150px;
         text-align: center;
@@ -810,30 +815,34 @@ ABOUT US MEDIA QUERY
 VERY SPECIFIC MEDIA QUERY FOR HEADER
 ====================================================*/
 
-@media only screen and (min-width: 767px) and (max-width: 1025px)  {
+
+@media only screen and (min-width: 767px) and (max-width: 1000px)  {
     #navbar a {
         padding: 14px 16px;
     }
-
+    /*
     .logo {
-        margin: 100px 0 10px 20px;
+        margin-top: 30px;
     }
-    .logo-img {
-        margin: 0 100%;
-    }
+
     .tagline {
-        margin: 10px 0 20px 0;
+        margin: 50px 20px 0 0;
         padding-left: 20px;
     }
+    .logo-img {
+        margin-top: -20px;
+    }
+    */
 }
 
 @media only screen and (max-width: 767px)  {
 
     .logo {
-        margin: 70px 0 20px 20px;
+        padding-top: 25px;
     }
+    /*
     .logo-img {
         margin: 0 0;
     }
-
+*/
 }
