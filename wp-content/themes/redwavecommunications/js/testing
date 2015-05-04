@@ -1,0 +1,35 @@
+<div class="container-fluid systemsContainer">
+
+    <div class="row">
+        <img src="/wp-content/uploads/2015/02/systems1.png" alt="all residential systems" />
+    </div>
+
+    <div class="row">
+        <div class="col-xs-4 estimate moveUp">
+            <a href="systems">View Business Systems</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-24 vertical-align">
+        <h3><span class="red">ALL RESIDENTIAL SYSTEMS</span></h3>
+        <ul class="bullets">
+        	<li>Access Control</li>
+        	<li>Audiovisual</li>
+        	<li>Home Automation</li>
+        	<li>Life Safety</li>
+        	<li>Security Systems</li>
+        	<li>Sound</li>
+        	<li>Structured Cabling</li>
+        	<li>Video Surveillance</li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-4 estimate moveRight">
+            <a href="contact-us">Get an estimate</a>
+        </div>
+    </div>
+
+</div><!--container-fluid-->
